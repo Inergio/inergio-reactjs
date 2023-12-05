@@ -1,0 +1,20 @@
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: .5rem 0;
+	
+	&__logo {
+		--logo-height: 40px;
+		padding: 0 1rem;
+		
+		.icon-svg {
+			height: var(--logo-height);
+			fill: var(--deep-koamaru-950);
+
+			svg {
+				height: var(--logo-height);
+			}
+		}
+	}
+}
