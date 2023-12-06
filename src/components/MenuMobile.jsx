@@ -122,28 +122,31 @@ function MenuMobile() {
               Inicio
             </a>
 
-            <div className="list-item list-item--with-sublist" data-category="categories">
+            {/* <div className="list-item list-item--with-sublist" data-category="categories">
               Categorías
 
               <div className="sublist-toggler">
                 <Icon iconSvg={<ChevronRight />} />
               </div>
-            </div>
+            </div> */}
 
-            <a className="list-item" href="/empresa">
-              Empresa
+            <a className="list-item" href="/sobre-nosotros">
+              Sobre nosotros
+            </a>
+            <a className="list-item" href="/productos-y-servicios">
+              Productos y Servicios
+            </a>
+            <a className="list-item" href="/novedades">
+              Novedades
             </a>
             <a className="list-item" href="/contacto">
               Contacto
-            </a>
-            <a className="list-item" href="/preguntas_frecuentes">
-              Preguntas frecuentes
             </a>
           </ul>
 
           <div className={`menu-list menu-list--step-2 ${menuState.currentStep < 2 ? 'next' : (menuState.currentStep > 2 
           ? 'prev' : '')}`}>
-            <ul className={`menu-list__category ${menuState.categoryToShow == 'categories' ? 'show' : ''}`} data-category-list="categories">
+            <ul className={`menu-list__category ${menuState.categoryToShow === 'categories' ? 'show' : ''}`} data-category-list="categories">
               <div className="menu-list__title">
                 Categorías
               </div>
