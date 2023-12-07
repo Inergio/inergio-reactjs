@@ -1,3 +1,25 @@
 html, body {
   font-family: var(--font-roboto);
+
+  &:hover {
+    &::-webkit-scrollbar-thumb {
+      background-color: #1a1a1a61;
+      border-radius: 4px;
+      transition: .3s;
+
+      &:hover {
+        background-color: #1a1a1acc;
+      }
+    }
+  }
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    z-index: 1;
+  }
 }
