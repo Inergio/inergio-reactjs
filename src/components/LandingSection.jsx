@@ -60,9 +60,6 @@ function LandingSection(props) {
             </div>
           </>
         )}
-
-        {/* <div>{name}</div>
-        <div>{infoPosition}</div> */}
       </div>
     </section>
   )

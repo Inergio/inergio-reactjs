@@ -17,21 +17,33 @@ body {
     background: #f0efffb3;
     color: var(--secondary);
     position: absolute;
-    padding: 3rem;
+    padding: 2rem 1rem;
     flex-direction: column;
     backdrop-filter: blur(3px);
 
+    @media (min-width: 768px) {
+      padding: 3rem;
+    }
+
     .data {
       .title {
-        font-size: 2rem;
+        font-size: 1.6rem;
         font-weight: 500;
+
+        @media (min-width: 768px) {
+          font-size: 2rem;
+        }
       }
 
       &__content {
-        font-size: 1.3rem;
+        font-size: 1rem;
         line-height: 1.6;
         margin-top: 1rem;
         color: var(--black);
+
+        @media (min-width: 768px) {
+          font-size: 1.3rem;
+        }
       }
     }
   }
@@ -93,10 +105,20 @@ body {
   &.left,
   &.right {
     .landing-section__info {
-      height: 100%;
-      top: 0;
-      max-width: 40vw;
-      padding-top: 8rem;
+      bottom: 0;
+      
+      @media (min-width: 768px) {
+        height: 100%;
+        max-width: 40vw;
+        top: 0;
+        bottom: unset;
+        padding-top: 8rem;
+
+        .data__content {
+          overflow: auto;
+          max-height: calc(100vh - 8rem - 1rem - 90px);
+        }
+      }
     }
   }
 
@@ -104,7 +126,10 @@ body {
     .landing-section__info {
       left: 0;
       box-shadow: 3px 0 10px 5px #0000001a;;
-      border-right: 5px solid #FFBA48;
+
+      @media (min-width: 768px) {
+        border-right: 5px solid #FFBA48;
+      }
     }
   }
 
@@ -112,7 +137,10 @@ body {
     .landing-section__info {
       right: 0;
       box-shadow: 0 -3px 10px 5px #0000001a;
-      border-left: 5px solid #FFBA48;
+      
+      @media (min-width: 768px) {
+        border-left: 5px solid #FFBA48;
+      }
     }
   }
 
