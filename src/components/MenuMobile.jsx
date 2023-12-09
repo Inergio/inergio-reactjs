@@ -95,6 +95,7 @@ function MenuMobile() {
 
   return (
     <>
+      {/* TODO: Hacer que el body no tenga scroll cuando esta desplegado  */}
       <div className="c-menu__open" onClick={openMenu}>
         <Icon iconSvg={<MenuIcon />} />
       </div>
