@@ -50,12 +50,12 @@ function CardSection() {
   ]
 
   return (
-    <section className="card-section">
-      <div className="card-section__title">
+    <section className="section section--card">
+      <div className="section__title">
         Novedades
       </div>
 
-      <div className="card-section__grid">
+      <div className="section__grid">
         {cardsArray.map((card, index) => (
           <CardHome key={index} card={card} />
         ))}
