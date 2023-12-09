@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,100italic,300italic");
+
+:root {
+  --font-roboto: 'Roboto', Helvetica, sans-serif;
+
+  // Colors
+  --deep-koamaru-50: #f1f6ff;
+	--deep-koamaru-100: #e5ecff;
+	--deep-koamaru-200: #ceddff;
+	--deep-koamaru-200-op-20: #ccdbff33;
+	--deep-koamaru-300: #a7beff;
+	--deep-koamaru-400: #7694ff;
+	--deep-koamaru-500: #3f5fff;
+	--deep-koamaru-500-op-10: #3d5eff1a;
+	--deep-koamaru-600: #1831ff;
+	--deep-koamaru-700: #0722fa;
+	--deep-koamaru-800: #051cd2;
+	--deep-koamaru-900: #0618ac;
+	--deep-koamaru-950: #001278;
+
+	--bg-transparent: #ccdbff80;
+	--bg-transparent-90: #ccdbffe6;
+
+	--black: #1a1a1a;
+	--black-op-10: #1a1a1a1a;
+	--white: #f2f2f2;
+	--white-op-10: #f2f2f21a;
+
+	--primary: var(--deep-koamaru-500);
+	--secondary: var(--deep-koamaru-950);
+}
