@@ -52,6 +52,8 @@ function MenuMobile() {
   }, [menuState.currentStep]);
 
   const openMenu = () => {
+    document.body.classList.add('menu-open');
+
     setMenuState((prevState) => ({
       ...prevState,
       menuOpen: true,
@@ -59,6 +61,8 @@ function MenuMobile() {
   };
 
   const closeMenu = () => {
+    document.body.classList.remove('menu-open');
+    
     resetMenu();
   };
 
