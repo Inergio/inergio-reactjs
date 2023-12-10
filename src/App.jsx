@@ -4,6 +4,7 @@ import Header from './components/Header'
 import { LandingSection } from './components/LandingSection';
 import { CardSection } from './components/CardSection';
 import { UsNetworks } from './components/UsNetworks';
+import { Footer } from './components/Footer';
 
 function App() {
   const landingSections = [
@@ -70,6 +71,8 @@ function App() {
       <CardSection />
 
       <UsNetworks />
+
+      <Footer />
 		</div>
 	);
 }
