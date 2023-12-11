@@ -1,31 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './App.scss';
 import Header from './components/Header'
-import { LandingSection } from './components/LandingSection';
-import { CardSection } from './components/CardSection';
-import { UsNetworks } from './components/UsNetworks';
+import { Home } from './views/Home';
+import { News } from './views/News';
 import { Footer } from './components/Footer';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
-  const landingSections = [
-    {
-      name: "main",
-      infoPosition: "center"
-    },
-    {
-      name: "renewableEnergy",
-      infoPosition: "bottom"
-    },
-    {
-      name: "productsAndServices",
-      infoPosition: "right"
-    },
-    {
-      name: "aboutUs",
-      infoPosition: "left"
-    },
-  ]
-
   const [scrolled, setScrolled] = useState('');
   const [scrolledUp, setScrolledUp] = useState('');
   const prevScrollYRef = useRef(0);
@@ -64,14 +45,13 @@ function App() {
 		<div className={`App ${scrolled} ${scrolledUp}`}>
 			<Header />
 
-			{landingSections.map((section, index) => (
-        <LandingSection key={index} section={section} />
-      ))}
-
-      <CardSection />
-
-      <UsNetworks />
-
+      <div className="body-div">
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/novedades' element={<News />} />
+        </Routes>
+      </div>
+			
       <Footer />
 		</div>
 	);

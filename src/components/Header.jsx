@@ -3,6 +3,7 @@ import { Icon } from './icons/Icon';
 import { Logo } from './icons/Logo';
 import { MenuMobile } from './MenuMobile';
 import { NavDesktop } from './NavDesktop';
+import { Link } from 'react-router-dom'
 
 
 function Header() {
@@ -24,9 +25,9 @@ function Header() {
     <header className="header">
       <div className="header__wrapper">
         {!isDesktop && <MenuMobile />}
-        <a href='/' className="header__logo">
+        <Link to='/' className="header__logo">
           <Icon iconSvg={<Logo />} />
-        </a>
+        </Link>
         {isDesktop && <NavDesktop />}
       </div>
     </header>
