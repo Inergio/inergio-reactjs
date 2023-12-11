@@ -1,25 +1,26 @@
 import React from 'react'
 import { Icon } from './icons/Icon';
 import { Instagram } from './icons/Instagram';
+import { Link } from 'react-router-dom'
 
 function NavDesktop() {
   return (
     <div className='header-nav'>
-      <a className="item" href="/sobre-nosotros">
+      <Link className="item" to="/sobre-nosotros">
         Sobre nosotros
-      </a>
-      <a className="item" href="/productos-y-servicios">
+      </Link>
+      <Link className="item" to="/productos-y-servicios">
         Productos y Servicios
-      </a>
-      <a className="item" href="/novedades">
+      </Link>
+      <Link className="item" to="/novedades">
         Novedades
-      </a>
-      <a className="c-btn c-btn-contained-primary not-pill" href="/contacto">
+      </Link>
+      <Link className="c-btn c-btn-contained-primary not-pill" to="/contacto">
         Contacto
-      </a>
-      <a className="c-btn c-btn-text-secondary not-pill" href="https://www.instagram.com/inergio.ingenieria/?hl=es-la" target="_blank">
+      </Link>
+      <Link className="c-btn c-btn-text-secondary not-pill" to="https://www.instagram.com/inergio.ingenieria/?hl=es-la" target="_blank" rel="noreferrer">
         <Icon iconSvg={<Instagram />} />
-      </a>
+      </Link>
     </div>
   )
 }
