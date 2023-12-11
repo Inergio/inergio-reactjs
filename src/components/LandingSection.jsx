@@ -1,9 +1,40 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react';
 import imagen1 from '../assets/landing/1.jpg';
 import logoHome from '../assets/landing/logo-home.jpg';
 
 function LandingSection(props) {
   const { name, infoPosition } = props.section;
+  const landingSectionInfoRefs = useRef([]);
+  
+  useEffect(() => {
+    const landingSections = document.querySelectorAll('.landing-section.bottom, .landing-section.left, .landing-section.right');
+    const handleScroll = () => {
+      landingSections.forEach((section, index) => {
+        const landingSectionInfo = section.querySelector('.landing-section__info');
+
+        if (section && landingSectionInfo) {
+          const rect = section.getBoundingClientRect();
+
+          if (rect.top <= 500) {
+            landingSectionInfo.classList.add('show');
+          } else {
+            landingSectionInfo.classList.remove('show');
+          }
+        }
+      });
+    };
+
+    // Inicializa las referencias cuando el componente se monta
+    landingSectionInfoRefs.current = Array.from({ length: landingSections.length }, () => React.createRef());
+
+    // Agrega el evento scroll al documento
+    window.addEventListener('scroll', handleScroll);
+
+    // Limpia el evento cuando el componente se desmonta
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []); // El array vacío asegura que el efecto se ejecute solo una vez al montar el componente
 
   return (
     <section className={`landing-section ${name} ${infoPosition}`}>
@@ -65,4 +96,4 @@ function LandingSection(props) {
   )
 }
 
-export { LandingSection }
+export { LandingSection };
