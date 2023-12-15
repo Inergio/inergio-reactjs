@@ -50,7 +50,7 @@ function CardSection() {
   ]
 
   return (
-    <section className="section section--card">
+    <section className="section-home section-home--card">
       <div className="section__title">
         Novedades
       </div>

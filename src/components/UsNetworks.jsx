@@ -25,7 +25,7 @@ function UsNetworks() {
   ]
 
   return (
-    <section className="section section--us-networks">
+    <section className="section-home section-home--us-networks">
       <div className="section__title">
         Nuestras redes
       </div>
