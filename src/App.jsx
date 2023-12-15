@@ -3,6 +3,7 @@ import './App.scss';
 import Header from './components/Header'
 import { Home } from './views/Home';
 import { News } from './views/News';
+import { AboutUs } from './views/AboutUs';
 import { Footer } from './components/Footer';
 import { Route, Routes } from 'react-router-dom';
 
@@ -48,6 +49,7 @@ function App() {
       <div className="body-div">
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/sobre-nosotros' element={<AboutUs />} />
           <Route path='/novedades' element={<News />} />
         </Routes>
       </div>
