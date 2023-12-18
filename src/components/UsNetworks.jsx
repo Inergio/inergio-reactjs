@@ -1,8 +1,8 @@
 import React from 'react'
-import facebookLogo from '../assets/social/facebook.png'
-import instagramLogo from '../assets/social/instagram.png'
-import linkedinLogo from '../assets/social/linkedin.png'
-import whatsappLogo from '../assets/social/whatsapp.png'
+import facebookLogo from '../assets/social/facebook.webp'
+import instagramLogo from '../assets/social/instagram.webp'
+import linkedinLogo from '../assets/social/linkedin.webp'
+import whatsappLogo from '../assets/social/whatsapp.webp'
 
 function UsNetworks() {
   const networks = [
@@ -37,7 +37,7 @@ function UsNetworks() {
       <div className="section__items">
         {networks.map((network, index) => (
           <a href={network.link} target="_blank" key={index}>
-            <img src={network.src} alt="" />
+            <img src={network.src} alt="" loading='lazy' />
           </a>
         ))}
       </div>

@@ -36,7 +36,7 @@ function AboutUs() {
         <div className='content__right'>
         {aboutUsItemsRight.map((item, index) => (
           <>
-            {/* <img src="" alt="" /> */}
+            {/* <img src="" alt="" loading='lazy' /> */}
             <div className="section" key={index}>
               <div className="section__title">
                 {item.title}
@@ -50,7 +50,7 @@ function AboutUs() {
         <div className='content__left'>
           {aboutUsItemsLeft.map((item, index) => (
             <>
-              {/* <img src="" alt="" /> */}
+              {/* <img src="" alt="" loading='lazy' /> */}
               <div className="section" key={index}>
                 <div className="section__title">
                   {item.title}

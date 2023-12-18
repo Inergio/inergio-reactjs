@@ -1,5 +1,5 @@
 import React from 'react'
-import imagen1 from '../assets/landing/1.jpg';
+import imagen1 from '../assets/landing/1.webp';
 
 function News() {
   return (
@@ -12,7 +12,7 @@ function News() {
       <div className="page-content page-content--news">
         <div className="news-card" id="news-card-1">
           <div className="news-card__img">
-            <img className="" src={imagen1} alt="Logo facebook" />
+            <img className="" src={imagen1} alt="Logo facebook" loading='lazy'/>
           </div>
           <div className="news-card__content">
             <div className="title">
@@ -35,7 +35,7 @@ function News() {
         </div>
         <div className="news-card" id="news-card-2">
           <div className="news-card__img">
-            <img className="" src={imagen1} alt="Logo facebook" />
+            <img className="" src={imagen1} alt="Logo facebook" loading='lazy' />
           </div>
           <div className="news-card__content">
             <div className="title">
@@ -48,7 +48,7 @@ function News() {
         </div>
         <div className="news-card" id="news-card-3">
           <div className="news-card__img">
-            <img className="" src={imagen1} alt="Logo facebook" />
+            <img className="" src={imagen1} alt="Logo facebook" loading='lazy' />
           </div>
           <div className="news-card__content">
             <div className="title">
@@ -61,7 +61,7 @@ function News() {
         </div>
         <div className="news-card" id="news-card-4">
           <div className="news-card__img">
-            <img className="" src={imagen1} alt="Logo facebook" />
+            <img className="" src={imagen1} alt="Logo facebook" loading='lazy' />
           </div>
           <div className="news-card__content">
             <div className="title">
@@ -74,7 +74,7 @@ function News() {
         </div>
         <div className="news-card" id="news-card-5">
           <div className="news-card__img">
-            <img className="" src={imagen1} alt="Logo facebook" />
+            <img className="" src={imagen1} alt="Logo facebook" loading='lazy' />
           </div>
           <div className="news-card__content">
             <div className="title">
@@ -87,7 +87,7 @@ function News() {
         </div>
         <div className="news-card" id="news-card-6">
           <div className="news-card__img">
-            <img className="" src={imagen1} alt="Logo facebook" />
+            <img className="" src={imagen1} alt="Logo facebook" loading='lazy' />
           </div>
           <div className="news-card__content">
             <div className="title">

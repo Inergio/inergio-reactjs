@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
-import imagen1 from '../assets/landing/1.jpg';
-import logoHome from '../assets/landing/logo-home.jpg';
+import imagen1 from '../assets/landing/1.webp';
+import logoHome from '../assets/landing/logo-home.webp';
 
 function LandingSection(props) {
   const { name, infoPosition } = props.section;
@@ -38,11 +38,11 @@ function LandingSection(props) {
 
   return (
     <section className={`landing-section ${name} ${infoPosition}`}>
-      <img className="landing-section__background" src={imagen1} alt="" />
+      <img className="landing-section__background" src={imagen1} loading="lazy" alt="" />
       <div className="landing-section__info">
         {name === "main" && (
           <>
-            <img className="info-image" src={logoHome} alt="" />
+            <img className="info-image" src={logoHome} loading="lazy" alt="" />
             {/* <h2 className='title'>Inergio Ingeniería</h2> */}
             <div className='data'>
               Somos soluciones, somos Inergio

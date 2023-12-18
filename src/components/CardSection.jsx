@@ -1,6 +1,6 @@
 import React from 'react'
 import { CardHome } from './CardHome';
-import imagen1 from '../assets/landing/1.jpg';
+import imagen1 from '../assets/landing/1.webp';
 
 function CardSection() {
   const cardsArray = [

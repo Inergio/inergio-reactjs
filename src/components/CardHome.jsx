@@ -6,7 +6,7 @@ function CardHome(props) {
   return (
     <section className="card">
       <div className="card__image">
-        <img src={image} alt="" />
+        <img src={image} alt="" loading='lazy' />
       </div>
       <div className="card__info">
         <div className="card__name">
