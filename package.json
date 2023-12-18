@@ -15,6 +15,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "optimize-images": "for file in $(find . -name '*.png' -o -name '*.jpg'); do cwebp -q 80 $file -o $(dirname $file)/$(basename $file .jpg | sed 's/.png//').webp; done;",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
