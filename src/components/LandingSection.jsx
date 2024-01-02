@@ -1,13 +1,22 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import imagen1 from '../assets/landing/1.webp';
 import logoHome from '../assets/landing/logo-home.webp';
 
 function LandingSection(props) {
   const { name, infoPosition } = props.section;
   const landingSectionInfoRefs = useRef([]);
+  const [heightSection, setHeightSection] = useState('100vh')
+  const section = useRef(null)
+  
+  useEffect(() => {
+    const infoHeight = section.current.querySelector('.landing-section__info').offsetHeight
+    setHeightSection(infoHeight + 'px')
+  },[])
   
   useEffect(() => {
     const landingSections = document.querySelectorAll('.landing-section.bottom, .landing-section.left, .landing-section.right');
+
+
     const handleScroll = () => {
       landingSections.forEach((section, index) => {
         const landingSectionInfo = section.querySelector('.landing-section__info');
@@ -37,8 +46,13 @@ function LandingSection(props) {
   }, []); // El array vacío asegura que el efecto se ejecute solo una vez al montar el componente
 
   return (
-    <section className={`landing-section ${name} ${infoPosition}`}>
-      <img className="landing-section__background" src={imagen1} loading="lazy" alt="" />
+    <section ref={section} className={`landing-section ${name} ${infoPosition}`} style={{height: heightSection}}>
+      <div style={{height: '100%'}}>
+        <div className="landing-section__background-wrapper">
+          <img className="landing-section__background" src={imagen1} loading="lazy" alt="" />
+        </div>
+      </div>
+
       <div className="landing-section__info">
         {name === "main" && (
           <>
