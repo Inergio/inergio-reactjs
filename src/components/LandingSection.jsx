@@ -56,25 +56,24 @@ function LandingSection(props) {
       <div className="landing-section__info">
         {name === "main" && (
           <>
-            <img className="info-image" src={logoHome} loading="lazy" alt="" />
+            <img className="info-image" src={logoHome} loading="lazy" alt="Un aire acondicionado del lado izquierdo de la imagen y en el fondo un cielo azul y despejado" />
             {/* <h2 className='title'>Inergio Ingeniería</h2> */}
             <div className='data'>
-              Somos soluciones, somos Inergio
+              <span>Somos soluciones</span><br/>
+              <span>Somos Inergio Ingenieria</span>
             </div>
           </>
         )}
 
         {name === "renewableEnergy" && (
           <>
+            {/* alt de la img de la seccion: 'Trabajadores de inergio resolviendo distintas situaciones' */}
             <div className='data'>
               <h2 className='title'>
-                Te presentamos las energias renovables
+              Soluciones en Servicios Energéticos y HVAC para Comercios e Industrias
               </h2>
               <div className='data__content'>
-                Las energías renovables son el futuro y nosotros queremos llevarte hacia él. Contamos con una amplia gama de productos y servicios que te van a permitir disfrutar de todas sus ventajas. La instalación de un sistema eléctrico eco-friendly marca el inicio de una vida mejor.
-
-                Luego de su instalación, tendrás un gran ahorro en tus costos energéticos y una mejoría en calidad. Al mismo tiempo, vas a contribuir con el cuidado del medio ambiente y a generar un ambiente positivo de trabajo.
-                Porque esto no es un gasto, es una inversión.
+              Llevamos a cabo relevamientos y desarrollos de informes y presupuestos para renovación, reparación y mantenimiento preventivo de las instalaciones, equipos y sistemas. Además, establecemos procesos proactivos para el mejoramiento de la explotación sostenible de la infraestructura, lo que se traduce en una eficiencia operacional.
               </div>
             </div>
           </>
@@ -87,20 +86,23 @@ function LandingSection(props) {
                 Productos y servicios
               </h2>
               <div className='data__content'>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, facilis obcaecati. Explicabo officia eius doloribus et tempora porro reprehenderit iure excepturi maiores magni nisi, autem ullam voluptas! Iusto, ratione fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, facilis obcaecati. Explicabo officia eius doloribus et tempora porro reprehenderit iure excepturi maiores magni nisi, autem ullam voluptas! Iusto, ratione fugiat.
+              Disponemos la prestación de múltiples servicios profesionales, los cuáles posibilitarán que su constructora, empresa o industria cuente con un único proveedor para solucionar diferentes situaciones y necesidades. Todo con el respectivo conocimiento de normativas y regulaciones que permitirán prevenir el riesgo de sanciones y accidentes laborales, y sobretodo optimizar los recursos indispensables para el funcionamiento, desarrollo y crecimiento de su empresa. Además, nuestras obras se llevan a cabocon personal de seguridad e higiene que garantizan la optimización de los procedimientos y actividades ejecutadas.
               </div>
+              {/* Dentro de esta seccion deberia haber un carousel con todas las cards de productos y servicios */}
             </div>
           </>
         )}
 
         {name === "aboutUs" && (
           <>
+            {/* alt de la img de la seccion: 'Manos de diversas personas apilandose en un mismo lugar como participes de un mismo equipo demostrando compañerismo' */}
+            {/* alt de la img about-us-planning: 'Dos personas planeando y sacando cuentas de un proyecto sobre una mesa de madera' */}
             <div className='data'>
               <h2 className='title'>
                 Sobre nosotros
               </h2>
               <div className='data__content'>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, facilis obcaecati. Explicabo officia eius doloribus et tempora porro reprehenderit iure excepturi maiores magni nisi, autem ullam voluptas! Iusto, ratione fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, facilis obcaecati. Explicabo officia eius doloribus et tempora porro reprehenderit iure excepturi maiores magni nisi, autem ullam voluptas! Iusto, ratione fugiat.
+              Nos dedicamos a proporcionar una amplia variedad de servicios energéticos y de climatización. Este último, incluye todo lo relacionado a la calefacción, refrigeración y ventilación, tanto en entornos comerciales como industriales. Desde el inicio de cada proyecto aportamos seguridad a los sistemas y personas que trabajan con ellos. Colaboramos con la optimización de recursos a través del mantenimiento preventivo y en caso de fallas, adecuamos los sistemas a través del mantenimiento correctivo. Nuestro amplio conocimiento y experiencia junto a un enfoque integral garantizan los atributos necesarios para brindar a nuestros clientes la confiabilidad requerida para llevar a cabo las mejores instalaciones. Garantizamos un diseño optimo, implementación profesional, operación eficiente y mantenimiento continuo de sus sistemas, maximizando el rendimiento energético y de su inversión, a largo plazo.
               </div>
             </div>
           </>
