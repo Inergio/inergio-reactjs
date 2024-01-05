@@ -20,7 +20,7 @@ function UsNetworks() {
     },
     {
       src : whatsappLogo,
-      link : "https://www.facebook.com/profile.php?id=100084586784225",
+      link : "https://wa.me/c/5493416590047",
     },
   ]
 
