@@ -7,16 +7,16 @@
 
 	&__wrapper {
 		display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5rem 0;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0.5rem 0;
 		margin: auto;
 	}
-	
+
 	&__logo {
 		--logo-height: 40px;
 		padding: 0 1rem;
-		
+
 		.icon-svg {
 			height: var(--logo-height);
 			fill: var(--deep-koamaru-950);
@@ -26,19 +26,19 @@
 			}
 		}
 	}
-	
-	&-nav {
 
+	&-nav {
 		display: flex;
 		align-items: center;
-    gap: .5rem;
-    padding-right: .5rem;
+		gap: .5rem;
+		padding-right: .5rem;
 		font-size: .9rem;
 
 		.item {
 			padding: .5rem;
 			color: var(--secondary);
 			font-weight: 500;
+			font-size: 1.2rem;
 		}
 
 		.icon-svg {
