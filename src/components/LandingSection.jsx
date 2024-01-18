@@ -41,7 +41,9 @@ function LandingSection(props) {
 
   useEffect(() => {
     const landingSectionCurrent = section.current 
-    if (landingSectionCurrent.classList.contains('left') && window.innerWidth >= 768 ) {
+    const isLeftOrRight = landingSectionCurrent.classList.contains('left') || landingSectionCurrent.classList.contains('right')
+
+    if ( isLeftOrRight && window.innerWidth >= 768 ) {
       const infoHeight = section.current.querySelector('.landing-section__info').offsetHeight
       landingSectionCurrent.style.height = infoHeight + 'px';
     }
@@ -49,10 +51,20 @@ function LandingSection(props) {
 
   return (
     <section ref={section} className={`landing-section ${name} ${infoPosition}`}>
-      <div style={{height: '100%'}}>
+      <div className='landing-section__main' style={{height: '100%'}}>
         { name !== 'productsAndServices' && (
           <div className="landing-section__background-wrapper">
             <img className="landing-section__background" src={imagen1} loading="lazy" alt="" />
+          </div>
+        )}
+        { name === 'productsAndServices' && (
+          <div className="landing-section__slider">
+            {/* TODO: Agregar slides */}
+            <div className="slide"></div>
+            <div className="slide"></div>
+            <div className="slide"></div>
+            <div className="slide"></div>
+            <div className="slide"></div>
           </div>
         )}
       </div>
