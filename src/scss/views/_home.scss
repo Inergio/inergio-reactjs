@@ -64,6 +64,18 @@ body {
     }
   }
 
+  &.productsAndServices {
+    .landing-section__main {
+      flex-grow: 1;
+
+      @media (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
   &.center {
     .landing-section__info {
       top: 0;
@@ -127,7 +139,9 @@ body {
   }
 
   &.right {
-    display: flex;
+    @media (min-width: 768px) {
+      display: flex;
+    }
   }
 
   &.bottom {
