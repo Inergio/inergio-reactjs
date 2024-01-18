@@ -41,7 +41,7 @@ function LandingSection(props) {
 
   useEffect(() => {
     const landingSectionCurrent = section.current 
-    if (landingSectionCurrent.classList.contains('left')) {
+    if (landingSectionCurrent.classList.contains('left') && window.innerWidth >= 768 ) {
       const infoHeight = section.current.querySelector('.landing-section__info').offsetHeight
       landingSectionCurrent.style.height = infoHeight + 'px';
     }
@@ -103,7 +103,7 @@ function LandingSection(props) {
             {/* alt de la img about-us-planning: 'Dos personas planeando y sacando cuentas de un proyecto sobre una mesa de madera' */}
             <div className='data'>
               <h2 className='title'>
-                Sobre nosotros
+                Nosotros
               </h2>
               <div className='data__content'>
               Nos dedicamos a proporcionar una amplia variedad de servicios energéticos y de climatización. Este último, incluye todo lo relacionado a la calefacción, refrigeración y ventilación, tanto en entornos comerciales como industriales. Desde el inicio de cada proyecto aportamos seguridad a los sistemas y personas que trabajan con ellos. Colaboramos con la optimización de recursos a través del mantenimiento preventivo y en caso de fallas, adecuamos los sistemas a través del mantenimiento correctivo. Nuestro amplio conocimiento y experiencia junto a un enfoque integral garantizan los atributos necesarios para brindar a nuestros clientes la confiabilidad requerida para llevar a cabo las mejores instalaciones. Garantizamos un diseño optimo, implementación profesional, operación eficiente y mantenimiento continuo de sus sistemas, maximizando el rendimiento energético y de su inversión, a largo plazo.
