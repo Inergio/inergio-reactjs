@@ -1,5 +1,7 @@
-import React, { useEffect, useState, useRef } from 'react';
-import imagen1 from '../assets/landing/1.webp';
+import React, { useEffect, useRef } from 'react';
+import imgMain from '../assets/landing/Home.webp';
+import imgSection1 from '../assets/landing/section1.webp';
+import imgSection3 from '../assets/landing/section3.webp';
 import logoHome from '../assets/landing/logo-home.webp';
 import Swiper from 'swiper';
 import 'swiper/css';
@@ -61,7 +63,15 @@ function LandingSection(props) {
       <div className='landing-section__main' style={{height: '100%'}}>
         { name !== 'productsAndServices' && (
           <div className="landing-section__background-wrapper">
-            <img className="landing-section__background" src={imagen1} loading="lazy" alt="" />
+            {name === 'main' && (
+              <img className="landing-section__background" src={imgMain} loading="lazy" alt="" />
+            )}
+            {name === 'renewableEnergy' && (
+              <img className="landing-section__background" src={imgSection1} loading="lazy" alt="" />
+            )}
+            {name === 'aboutUs' && (
+              <img className="landing-section__background" src={imgSection3} loading="lazy" alt="" />
+            )}
           </div>
         )}
         { name === 'productsAndServices' && (
