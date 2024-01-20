@@ -1,11 +1,20 @@
-import React, { useEffect, useState, useRef } from 'react';
-import imagen1 from '../assets/landing/1.webp';
+import React, { useEffect, useRef } from 'react';
+import imgMain from '../assets/landing/Home.webp';
+import imgSection1 from '../assets/landing/section1.webp';
+import imgSection3 from '../assets/landing/section3.webp';
 import logoHome from '../assets/landing/logo-home.webp';
+import Swiper from 'swiper';
+import 'swiper/css';
 
 function LandingSection(props) {
   const { name, infoPosition } = props.section;
   const landingSectionInfoRefs = useRef([]);
   const section = useRef(null)
+
+  const swiperOptions = {
+    slidesPerView: 2,
+  }
+  const serviceSlider = new Swiper('.landing-section__slider', swiperOptions)
   
   useEffect(() => {
     const landingSections = document.querySelectorAll('.landing-section.bottom, .landing-section.left, .landing-section.right');
@@ -54,17 +63,27 @@ function LandingSection(props) {
       <div className='landing-section__main' style={{height: '100%'}}>
         { name !== 'productsAndServices' && (
           <div className="landing-section__background-wrapper">
-            <img className="landing-section__background" src={imagen1} loading="lazy" alt="" />
+            {name === 'main' && (
+              <img className="landing-section__background" src={imgMain} loading="lazy" alt="" />
+            )}
+            {name === 'renewableEnergy' && (
+              <img className="landing-section__background" src={imgSection1} loading="lazy" alt="" />
+            )}
+            {name === 'aboutUs' && (
+              <img className="landing-section__background" src={imgSection3} loading="lazy" alt="" />
+            )}
           </div>
         )}
         { name === 'productsAndServices' && (
-          <div className="landing-section__slider">
-            {/* TODO: Agregar slides */}
-            <div className="slide"></div>
-            <div className="slide"></div>
-            <div className="slide"></div>
-            <div className="slide"></div>
-            <div className="slide"></div>
+          <div className="landing-section__slider swiper">
+            <div className="swiper-wrapper">
+              {/* TODO: Reemplazar lorem ipsum por cards */}
+              <div className="swiper-slide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur inventore ex nobis itaque. Odit soluta, sunt molestias repellat quasi ducimus dolorum, nihil perspiciatis facere doloremque obcaecati, a cum modi rerum?</div>
+              <div className="swiper-slide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur inventore ex nobis itaque. Odit soluta, sunt molestias repellat quasi ducimus dolorum, nihil perspiciatis facere doloremque obcaecati, a cum modi rerum?</div>
+              <div className="swiper-slide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur inventore ex nobis itaque. Odit soluta, sunt molestias repellat quasi ducimus dolorum, nihil perspiciatis facere doloremque obcaecati, a cum modi rerum?</div>
+              <div className="swiper-slide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur inventore ex nobis itaque. Odit soluta, sunt molestias repellat quasi ducimus dolorum, nihil perspiciatis facere doloremque obcaecati, a cum modi rerum?</div>
+              <div className="swiper-slide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur inventore ex nobis itaque. Odit soluta, sunt molestias repellat quasi ducimus dolorum, nihil perspiciatis facere doloremque obcaecati, a cum modi rerum?</div>
+            </div>
           </div>
         )}
       </div>
