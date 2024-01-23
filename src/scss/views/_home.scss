@@ -65,13 +65,30 @@ body {
   }
 
   &.productsAndServices {
-    .landing-section__main {
-      flex-grow: 1;
+    .landing-section {
+      &__main {
+        flex-grow: 1;
+        
+        @media (min-width: 768px) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          max-width: 60vw;
+        }
+      }
 
-      @media (min-width: 768px) {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      &__slider {
+        .swiper-slide {
+          .card {
+            margin: 0 1rem;
+          }
+
+          &:first-child {
+            .card {
+              margin-left: 2rem;
+            }
+          }
+        }
       }
     }
   }
@@ -429,7 +446,7 @@ body {
   }
 
   &--services {
-    padding: 1rem;
+    // padding: 1rem;
   }
 }
 

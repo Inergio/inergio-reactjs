@@ -1,5 +1,5 @@
 import React from 'react'
-import imagen1 from '../assets/landing/1.webp';
+import imagen1 from '../assets/landing/Calefacción.webp';
 
 function News() {
   return (
