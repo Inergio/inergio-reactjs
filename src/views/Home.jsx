@@ -123,7 +123,7 @@ function Home() {
 
             <div className="card__text">
               Podes comunicarte con nuestra área
-              administrativa en el +54 9 341 659 0047
+              administrativa en el <b>+54 9 341 659 0047</b>
               donde te brindaremos toda la
               información que buscas y en caso de
               que sea necesario te derivaremos al
