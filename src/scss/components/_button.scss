@@ -91,7 +91,7 @@
   // Types
   &.c-btn-contained {
     &-primary {
-      background: var(--deep-koamaru-500);
+      background: var(--deep-koamaru-900);
       color: var(--white);
     }
 
@@ -182,6 +182,7 @@
     &-quaternary,
     &-alternative,
     &-success {
+
       &.disabled,
       &[disabled] {
         cursor: default;
@@ -420,6 +421,7 @@
 }
 
 .c-btn {
+
   &.btn-fab,
   &.btn-fab-mini {
     overflow: hidden;

@@ -1,5 +1,5 @@
 :root {
-  --menu-mobile-background: var(--bg-transparent);
+  --menu-mobile-background: #ccdbffcc;
   --menu-mobile-effect-decoration: var(--deep-koamaru-500);
   --menu-mobile-burger-button: var(--deep-koamaru-950);
   --menu-mobile-hover-on-button: var(--deep-koamaru-950);
@@ -11,7 +11,7 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	height: 100%;
+	height: 100vh;
 	width: 100%;
 	max-width: 340px;
 	background: var(--menu-mobile-background);
@@ -69,8 +69,8 @@
 		position: fixed;
 		top: 0;
 		left: 0;
+		height: 100vh;
 		width: 100%;
-		height: 100%;
 		opacity: 0;
 		transition: .4s;
 		pointer-events: none;
@@ -292,6 +292,10 @@
 			}
 		}
 	}
+}
+
+body.menu-open {
+	overflow: hidden;
 }
 
 @keyframes bounce-left {

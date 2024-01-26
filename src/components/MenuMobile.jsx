@@ -5,6 +5,7 @@ import { MenuIcon } from './icons/MenuIcon';
 import { ChevronLeft } from './icons/ChevronLeft';
 import { ChevronRight } from './icons/ChevronRight';
 import { Close } from './icons/Close';
+import { Link } from 'react-router-dom'
 
 function MenuMobile() {
   const [menuState, setMenuState] = useState({
@@ -52,6 +53,8 @@ function MenuMobile() {
   }, [menuState.currentStep]);
 
   const openMenu = () => {
+    document.body.classList.add('menu-open');
+
     setMenuState((prevState) => ({
       ...prevState,
       menuOpen: true,
@@ -59,6 +62,8 @@ function MenuMobile() {
   };
 
   const closeMenu = () => {
+    document.body.classList.remove('menu-open');
+    
     resetMenu();
   };
 
@@ -95,6 +100,7 @@ function MenuMobile() {
 
   return (
     <>
+      {/* TODO: Hacer que el body no tenga scroll cuando esta desplegado  */}
       <div className="c-menu__open" onClick={openMenu}>
         <Icon iconSvg={<MenuIcon />} />
       </div>
@@ -106,9 +112,9 @@ function MenuMobile() {
             <Icon iconSvg={<ChevronLeft />} />
           </button>
 
-          <a href='/' className="header__logo">
+          <Link to='/' className="header__logo">
             <Icon iconSvg={<Logo />} />
-          </a>
+          </Link>
 
           <button className="menu-header__close" aria-label="Cerrar menú" onClick={closeMenu}>
             <Icon iconSvg={<Close />} />
@@ -118,9 +124,9 @@ function MenuMobile() {
         <div className="c-menu__list">
           <ul className={`menu-list menu-list--step-1 ${menuState.currentStep > 1 ? 'prev' : ''}`}>
 
-            <a className="list-item" href="/">
+            <Link className="list-item" to="/">
               Inicio
-            </a>
+            </Link>
 
             {/* <div className="list-item list-item--with-sublist" data-category="categories">
               Categorías
@@ -130,21 +136,21 @@ function MenuMobile() {
               </div>
             </div> */}
 
-            <a className="list-item" href="/sobre-nosotros">
+            <Link className="list-item" to="/sobre-nosotros">
               Sobre nosotros
-            </a>
-            <a className="list-item" href="/productos-y-servicios">
+            </Link>
+            <Link className="list-item" to="/productos-y-servicios">
               Productos y Servicios
-            </a>
-            <a className="list-item" href="/novedades">
+            </Link>
+            <Link className="list-item" to="/novedades">
               Novedades
-            </a>
-            <a className="list-item" href="/contacto">
+            </Link>
+            <Link className="list-item" to="/contacto">
               Contacto
-            </a>
+            </Link>
           </ul>
 
-          <div className={`menu-list menu-list--step-2 ${menuState.currentStep < 2 ? 'next' : (menuState.currentStep > 2 
+          {/* <div className={`menu-list menu-list--step-2 ${menuState.currentStep < 2 ? 'next' : (menuState.currentStep > 2 
           ? 'prev' : '')}`}>
             <ul className={`menu-list__category ${menuState.categoryToShow === 'categories' ? 'show' : ''}`} data-category-list="categories">
               <div className="menu-list__title">
@@ -160,9 +166,8 @@ function MenuMobile() {
               <a className="list-item" href="/preguntas_frecuentes">
                 Preguntas frecuentes
               </a>
-
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
