@@ -14,7 +14,7 @@ function NavDesktop() {
         Novedades
       </Link>
       <Link className="c-btn c-btn-contained-primary not-pill"  to="https://wa.me/c/5493416590047">
-       <Icon iconSvg={<Instagram />} />
+       <Icon iconSvg={<Whatsapp />} />
         Contactar
       </Link>
       <Link className="c-btn c-btn-text-secondary not-pill" to="https://www.instagram.com/inergio.ingenieria/?hl=es-la" target="_blank" rel="noreferrer">
