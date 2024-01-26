@@ -139,9 +139,9 @@ function MenuMobile() {
             <Link className="list-item" to="/sobre-nosotros">
               Sobre nosotros
             </Link>
-            <Link className="list-item" to="/productos-y-servicios">
+            {/* <Link className="list-item" to="/productos-y-servicios">
               Productos y Servicios
-            </Link>
+            </Link> */}
             <Link className="list-item" to="/novedades">
               Novedades
             </Link>
