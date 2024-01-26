@@ -9,9 +9,6 @@ function NavDesktop() {
       <Link className="item" to="/sobre-nosotros">
         Sobre nosotros
       </Link>
-      <Link className="item" to="/productos-y-servicios">
-        Productos y Servicios
-      </Link>
       <Link className="item" to="/novedades">
         Novedades
       </Link>
