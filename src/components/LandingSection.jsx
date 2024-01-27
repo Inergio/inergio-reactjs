@@ -27,6 +27,14 @@ function LandingSection(props) {
 
   const swiperOptions = {
     slidesPerView: 1,
+    breakpoints: {
+      576: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 3,
+      }
+    }
     // spaceBetween: 32,
     // centeredSlides: true,
     // loop: true,
