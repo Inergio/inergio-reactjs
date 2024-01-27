@@ -3,6 +3,20 @@ import imgMain from '../assets/landing/Home.webp';
 import imgSection1 from '../assets/landing/section1.webp';
 import imgSection3 from '../assets/landing/section3.webp';
 import logoHome from '../assets/landing/logo-home.webp';
+import imgProduct1 from '../assets/landing/img-product-1.webp'
+import imgProduct2 from '../assets/landing/img-product-2.webp'
+import imgProduct3 from '../assets/landing/img-product-3.webp'
+import imgProduct4 from '../assets/landing/img-product-4.webp'
+import imgProduct5 from '../assets/landing/img-product-5.webp'
+import imgProduct6 from '../assets/landing/img-product-6.webp'
+import imgProduct7 from '../assets/landing/img-product-7.webp'
+import imgProduct8 from '../assets/landing/img-product-8.webp'
+import imgProduct9 from '../assets/landing/img-product-8.webp'
+import imgProduct10 from '../assets/landing/img-product-10.webp'
+import imgProduct11 from '../assets/landing/img-product-11.webp'
+import imgProduct12 from '../assets/landing/img-product-12.webp'
+import imgProduct13 from '../assets/landing/img-product-13.webp'
+import imgProduct14 from '../assets/landing/img-product-14.webp'
 import Swiper from 'swiper';
 import 'swiper/css/bundle';
 
@@ -13,6 +27,14 @@ function LandingSection(props) {
 
   const swiperOptions = {
     slidesPerView: 1,
+    breakpoints: {
+      576: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 3,
+      }
+    }
     // spaceBetween: 32,
     // centeredSlides: true,
     // loop: true,
@@ -87,7 +109,7 @@ function LandingSection(props) {
               <div className="swiper-slide">
                 <div className="card card--services">
                   <div className="card__image">
-                    <img alt="" src={imgMain} loading='lazy' />
+                    <img alt="" src={imgProduct1} loading='lazy' />
                   </div>
                   <div className="card__info">
                     <div className="card__name">
@@ -103,7 +125,7 @@ function LandingSection(props) {
               <div className="swiper-slide">
                 <div className="card card--services">
                   <div className="card__image">
-                    <img alt="" src={imgMain} loading='lazy' />
+                    <img alt="" src={imgProduct2} loading='lazy' />
                   </div>
                   <div className="card__info">
                     <div className="card__name">
@@ -119,7 +141,7 @@ function LandingSection(props) {
               <div className="swiper-slide">
                 <div className="card card--services">
                   <div className="card__image">
-                    <img alt="" src={imgMain} loading='lazy' />
+                    <img alt="" src={imgProduct3} loading='lazy' />
                   </div>
                   <div className="card__info">
                     <div className="card__name">
@@ -135,7 +157,7 @@ function LandingSection(props) {
               <div className="swiper-slide">
                 <div className="card card--services">
                   <div className="card__image">
-                    <img alt="" src={imgMain} loading='lazy' />
+                    <img alt="" src={imgProduct4} loading='lazy' />
                   </div>
                   <div className="card__info">
                     <div className="card__name">
@@ -151,7 +173,7 @@ function LandingSection(props) {
               <div className="swiper-slide">
                 <div className="card card--services">
                   <div className="card__image">
-                    <img alt="" src={imgMain} loading='lazy' />
+                    <img alt="" src={imgProduct5} loading='lazy' />
                   </div>
                   <div className="card__info">
                     <div className="card__name">
@@ -167,7 +189,7 @@ function LandingSection(props) {
               <div className="swiper-slide">
                 <div className="card card--services">
                   <div className="card__image">
-                    <img alt="" src={imgMain} loading='lazy' />
+                    <img alt="" src={imgProduct6} loading='lazy' />
                   </div>
                   <div className="card__info">
                     <div className="card__name">
@@ -183,7 +205,7 @@ function LandingSection(props) {
               <div className="swiper-slide">
                 <div className="card card--services">
                   <div className="card__image">
-                    <img alt="" src={imgMain} loading='lazy' />
+                    <img alt="" src={imgProduct7} loading='lazy' />
                   </div>
                   <div className="card__info">
                     <div className="card__name">
@@ -199,7 +221,7 @@ function LandingSection(props) {
               <div className="swiper-slide">
                 <div className="card card--services">
                   <div className="card__image">
-                    <img alt="" src={imgMain} loading='lazy' />
+                    <img alt="" src={imgProduct8} loading='lazy' />
                   </div>
                   <div className="card__info">
                     <div className="card__name">
@@ -215,7 +237,7 @@ function LandingSection(props) {
               <div className="swiper-slide">
                 <div className="card card--services">
                   <div className="card__image">
-                    <img alt="" src={imgMain} loading='lazy' />
+                    <img alt="" src={imgProduct9} loading='lazy' />
                   </div>
                   <div className="card__info">
                     <div className="card__name">
@@ -231,7 +253,7 @@ function LandingSection(props) {
               <div className="swiper-slide">
                 <div className="card card--services">
                   <div className="card__image">
-                    <img alt="" src={imgMain} loading='lazy' />
+                    <img alt="" src={imgProduct10} loading='lazy' />
                   </div>
                   <div className="card__info">
                     <div className="card__name">
@@ -247,7 +269,7 @@ function LandingSection(props) {
               <div className="swiper-slide">
                 <div className="card card--services">
                   <div className="card__image">
-                    <img alt="" src={imgMain} loading='lazy' />
+                    <img alt="" src={imgProduct11} loading='lazy' />
                   </div>
                   <div className="card__info">
                     <div className="card__name">
@@ -263,7 +285,7 @@ function LandingSection(props) {
               <div className="swiper-slide">
                 <div className="card card--services">
                   <div className="card__image">
-                    <img alt="" src={imgMain} loading='lazy' />
+                    <img alt="" src={imgProduct12} loading='lazy' />
                   </div>
                   <div className="card__info">
                     <div className="card__name">
@@ -279,7 +301,7 @@ function LandingSection(props) {
               <div className="swiper-slide">
                 <div className="card card--services">
                   <div className="card__image">
-                    <img alt="" src={imgMain} loading='lazy' />
+                    <img alt="" src={imgProduct13} loading='lazy' />
                   </div>
                   <div className="card__info">
                     <div className="card__name">
@@ -295,7 +317,7 @@ function LandingSection(props) {
               <div className="swiper-slide">
                 <div className="card card--services">
                   <div className="card__image">
-                    <img alt="" src={imgMain} loading='lazy' />
+                    <img alt="" src={imgProduct14} loading='lazy' />
                   </div>
                   <div className="card__info">
                     <div className="card__name">
