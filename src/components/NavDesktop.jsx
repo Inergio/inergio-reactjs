@@ -1,6 +1,7 @@
 import React from 'react'
 import { Icon } from './icons/Icon';
 import { Instagram } from './icons/Instagram';
+import { Whatsapp } from './icons/Whatsapp';
 import { Link } from 'react-router-dom'
 
 function NavDesktop() {
@@ -16,7 +17,8 @@ function NavDesktop() {
         Novedades
       </Link>
       <Link className="c-btn c-btn-contained-primary not-pill"  to="https://wa.me/c/5493416590047">
-        Contacto
+       <Icon iconSvg={<Whatsapp />} />
+        Contactar
       </Link>
       <Link className="c-btn c-btn-text-secondary not-pill" to="https://www.instagram.com/inergio.ingenieria/?hl=es-la" target="_blank" rel="noreferrer">
         <Icon iconSvg={<Instagram />} />

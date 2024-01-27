@@ -68,7 +68,7 @@ body {
     .landing-section {
       &__main {
         flex-grow: 1;
-        
+
         @media (min-width: 768px) {
           display: flex;
           align-items: center;
@@ -333,27 +333,62 @@ body {
   }
 
   &--about-us {
-    min-height: 100vh;
+    min-height: 100%;
+
+    .section__title {
+      border-bottom: 2px solid #FFBA48;
+      padding-bottom: 0.25rem;
+      width: 60%;
+      margin: auto auto 2rem;
+    }
 
     .section {
       &__grid {
-        margin: 2rem auto 0;
+        margin: 0.5rem auto 0;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(0, 328px));
+        grid-template-columns: repeat(auto-fill, minmax(0, 450px));
         gap: 1.5rem;
         justify-content: center;
         max-width: 1350px;
 
         @media (min-width: 768px) {
           margin-top: 4rem;
+          grid-template-columns: repeat(2, auto);
+        }
+
+        @media (min-width: 768px) {
+          grid-template-columns: repeat(3, auto);
         }
 
         .item {
           &__title {
+            font-size: 1.2rem;
             font-weight: 600;
+            color: var(--deep-koamaru-900);
+            text-align: center;
+
+            @media (min-width: 576px) {
+              text-align: left;
+            }
+
+            @media (min-width: 992px) {
+              font-size: 1.4rem;
+            }
           }
 
-          &__text {}
+          .card__text {
+            font-size: 1rem;
+            color: var(--deep-koamaru-700);
+            text-align: center;
+
+            @media (min-width: 576px) {
+              text-align: left;
+            }
+
+            @media (min-width: 992px) {
+              font-size: 1.2rem;
+            }
+          }
         }
       }
     }
