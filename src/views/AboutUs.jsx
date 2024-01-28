@@ -1,69 +1,84 @@
-import React from 'react'
+import React from "react";
 
 function AboutUs() {
-  const aboutUsItemsRight = [
-    {
-      title: "¿Cómo trabajamos?",
-      content: "Lo primero es escuchar las consultas de quien nos contacte, seguido de esto desarrollamos la etapa de planeacion y presupuesto, donde vamos a buscar la solucion que sea màs apta para resolver completamente tu problema. <br> Una vez terminada la planificacion y confirmado el presupuesto nos ponemos manos a la obra para solucionar tu problema en el menor tiempo posible, aplicando toda nuestra experiencia y trayectoria para garantizar la mayor calidad de servicio.",
-    },
-    {
-      title: "¿Qué pasa después?",
-      content: "Desde nuestro departamento de Administración le van a brindar seguimiento continuo para verificar la correcta aplicacion de las soluciones y en caso de que sea necesario, brindar ayuda. Con esto nos aseguramos los siguientes puntos:<ul><li>Establecer un vinculo único con el cliente.</li><li>Su total satisfaccion con el servicio.</li><li>Ayuda profesional sin importar la hora ni el día.</li></ul>",
-    },
-  ]
   const aboutUsItemsLeft = [
     {
       title: "¿Cómo empezamos?",
-      content: "Inergio es una empresa en crecimiento fundada en 2019. Desde un principio nuestro principal objetivo es brindar soluciones a tus problemas. Especializados en electricidad y refrigeraciones forjamos una largo historial de clientes satisfechos y problemas resueltos.",
+      content:
+        "Inergio es una empresa que sigue en constante crecimiento desde su fundación en el año 2019. Tenemos como objetivo brindar los mejores servicios a comercios e industrias.",
     },
     {
-      title: "¿Cómo los contacto?",
-      content: "Podés contactarnos mandanos un mensaje a nuestro Whatsapp +54 9 3416 59-0047 o buscarnos en todas las redes sociales como Inergio Ingenieria.",
+      title: "Nuestros valores",
+      content:
+        "Proporcionar procesos transparentes con la utilización correcta de recursos y estricto cumplimiento de normativas, priorizando la salud, la seguridad laboral y el compromiso con las relaciones basadas en la honestidad y el respeto. Asimismo, buscamos aportar al desarrollo de medidas de gestión de triple impacto: social, ambiental y económico, permitiendo así reinventar la cadena de valor.",
     },
-  ]
+    {
+      title: "Nuestros visión",
+      content:
+        "Ser referentes en nuestra área de actuación, siendo reconocidos por nuestros clientes, proveedores y colaboradores, como una empresa que brinda soluciones y excelencia, con principios de sustentabilidad, humanidad, transparencia y compromiso con el cliente.",
+    },
+  ];
+
+  const aboutUsItemsRight = [
+    {
+      title: "¿Cómo trabajamos?",
+      content:
+        "Para nosotros, la atención personalizada es primordial, cualquiera sea su actividad comercial o industrial, si estás interesado en nuestros servicios podes comunicarte por cualquiera de nuestros medios de comunicación o rellenar el formulario acá en nuestra web y brevemente nos pondremos en contacto.",
+    },
+    {
+      title: "Nuestro capital humano",
+      content:
+        "Un equipo constituido por profesionales con vasta experiencia en el sector que además se encuentra en constante capacitación.",
+    },
+    {
+      title: "¿Cómo te comunicas con nosotros?",
+      content:
+        "Podes comunicarte con nuestra área administrativa en el +54 9 341 659 0047donde te brindaremos toda la información que buscas y en caso de que sea necesario te derivaremos al área correspondiente.",
+    },
+  ];
+
   return (
-    <div className='page'>
+    <div className="page page--about-us">
       <div className="page__top">
-        <div className="page__title">
-          Sobre nosotros
-        </div>
+        <div className="page__title">Sobre nosotros</div>
         <div className="page__subtitle">
           Conoce quienes somos y con quienes trabajamos
         </div>
       </div>
 
       <div className="page__content">
-        <div className='content__right'>
-        {aboutUsItemsRight.map((item, index) => (
-          <>
-            {/* <img src="" alt="" loading='lazy' /> */}
-            <div className="section" key={index}>
-              <div className="section__title">
-                {item.title}
+        <div className="content__right">
+          {aboutUsItemsRight.map((item, index) => (
+            <>
+              {/* <img src="" alt="" loading='lazy' /> */}
+              <div className="section" key={index}>
+                <div className="section__title">{item.title}</div>
+                <div
+                  className="section__content"
+                  dangerouslySetInnerHTML={{ __html: item.content }}
+                />
               </div>
-              <div className="section__content" dangerouslySetInnerHTML={{ __html: item.content }} />
-            </div>
-          </>
-        ))}
+            </>
+          ))}
         </div>
 
-        <div className='content__left'>
+        <div className="content__left">
           {aboutUsItemsLeft.map((item, index) => (
             <>
               {/* <img src="" alt="" loading='lazy' /> */}
               <div className="section" key={index}>
-                <div className="section__title">
-                  {item.title}
-                </div>
-                <div className="section__content" dangerouslySetInnerHTML={{ __html: item.content }} />
+                <div className="section__title">{item.title}</div>
+                <div
+                  className="section__content"
+                  dangerouslySetInnerHTML={{ __html: item.content }}
+                />
               </div>
             </>
           ))}
         </div>
       </div>
-
     </div>
-  )
+  );
 }
 
-export { AboutUs }
+export { AboutUs };
