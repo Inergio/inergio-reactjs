@@ -9,42 +9,42 @@ function CardSection() {
       name: "Empresa 1",
       date: "12/11/2023",
       data: "Estuvimos en una capacitacion para mejorar el servicio que brindamos. Nuestros profesionales se especializaron en las ultimás tecnologías de refrigeración",
-      link: "/novedades#id"
+      link: "/novedades"
     },
     {
       image: imagen1,
       name: "Empresa 2",
       date: "12/11/2023",
       data: "Estuvimos en una capacitacion para mejorar el servicio que brindamos. Nuestros profesionales se especializaron en las ultimás tecnologías de refrigeración",
-      link: "/novedades#id"
+      link: "/novedades"
     },
     {
       image: imagen1,
       name: "Empresa 3",
       date: "12/11/2023",
       data: "Estuvimos en una capacitacion para mejorar el servicio que brindamos. Nuestros profesionales se especializaron en las ultimás tecnologías de refrigeración",
-      link: "/novedades#id"
+      link: "/novedades"
     },
     {
       image: imagen1,
       name: "Empresa 4",
       date: "12/11/2023",
       data: "Estuvimos en una capacitacion para mejorar el servicio que brindamos. Nuestros profesionales se especializaron en las ultimás tecnologías de refrigeración",
-      link: "/novedades#id"
+      link: "/novedades"
     },
     {
       image: imagen1,
       name: "Empresa 5",
       date: "12/11/2023",
       data: "Estuvimos en una capacitacion para mejorar el servicio que brindamos. Nuestros profesionales se especializaron en las ultimás tecnologías de refrigeración",
-      link: "/novedades#id"
+      link: "/novedades"
     },
     {
       image: imagen1,
       name: "Empresa 6",
       date: "12/11/2023",
       data: "Estuvimos en una capacitacion para mejorar el servicio que brindamos. Nuestros profesionales se especializaron en las ultimás tecnologías de refrigeración",
-      link: "/novedades#id"
+      link: "/novedades"
     },
     
   ]
@@ -57,7 +57,7 @@ function CardSection() {
 
       <div className="section__grid">
         {cardsArray.map((card, index) => (
-          <CardHome key={index} card={card} />
+          <CardHome key={index} card={card} index={index} />
         ))}
       </div>
     </section>

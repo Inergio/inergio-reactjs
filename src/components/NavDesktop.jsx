@@ -16,7 +16,7 @@ function NavDesktop() {
       <Link className="item" to="/novedades">
         Novedades
       </Link>
-      <Link className="c-btn c-btn-contained-primary not-pill"  to="https://wa.me/c/5493416590047">
+      <Link className="header-nav__button c-btn c-btn-contained-primary not-pill"  to="https://wa.me/c/5493416590047">
        <Icon iconSvg={<Whatsapp />} />
         Contactar
       </Link>

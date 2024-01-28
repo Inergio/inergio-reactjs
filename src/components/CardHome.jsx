@@ -1,7 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function CardHome(props) {
   const { image, name, date, data, link } = props.card;
+  const index = props.index
 
   return (
     <section className="card">
@@ -18,9 +20,9 @@ function CardHome(props) {
         <div className="card__data">
           {data}
         </div>
-        <a href={link} className="c-btn c-btn-contained-primary">
+        <Link to={`${link}#news-card-${index}`} className="c-btn c-btn-contained-primary" target='_blank' rel='noreferrer'>
           Ver más
-        </a>
+        </Link>
       </div>
     </section>
   )

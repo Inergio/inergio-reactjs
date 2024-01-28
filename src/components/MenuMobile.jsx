@@ -3,7 +3,8 @@ import { Icon } from './icons/Icon';
 import { Logo } from './icons/Logo';
 import { MenuIcon } from './icons/MenuIcon';
 import { ChevronLeft } from './icons/ChevronLeft';
-import { ChevronRight } from './icons/ChevronRight';
+import { Whatsapp } from './icons/Whatsapp';
+import { Instagram } from './icons/Instagram';
 import { Close } from './icons/Close';
 import { Link } from 'react-router-dom'
 
@@ -145,8 +146,21 @@ function MenuMobile() {
             <Link className="list-item" to="/novedades">
               Novedades
             </Link>
-            <Link className="list-item" to="/contacto">
-              Contacto
+            <Link className="list-item list-item--with-icon" to="https://wa.me/c/5493416590047">
+              <Icon iconSvg={<Whatsapp />} />
+              Whatsapp
+            </Link>
+            <Link className="list-item list-item--with-icon" to="https://www.instagram.com/inergio.ingenieria/?hl=es-la">
+              <Icon iconSvg={<Instagram />} />
+              Instagram
+            </Link>
+            <Link className="list-item list-item--with-icon" to="https://www.linkedin.com/in/inergio-ingenier%C3%ADa-788135279/">
+              <Icon iconSvg={<Whatsapp />} />
+              LinkedIn
+            </Link>
+            <Link className="list-item list-item--with-icon" to="https://wa.me/c/5493416590047">
+              <Icon iconSvg={<Whatsapp />} />
+              Facebook
             </Link>
           </ul>
 

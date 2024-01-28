@@ -31,7 +31,7 @@ function LandingSection(props) {
       576: {
         slidesPerView: 2,
       },
-      992: {
+      1400: {
         slidesPerView: 3,
       }
     }
