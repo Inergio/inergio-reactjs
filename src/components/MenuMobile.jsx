@@ -4,7 +4,9 @@ import { Logo } from './icons/Logo';
 import { MenuIcon } from './icons/MenuIcon';
 import { ChevronLeft } from './icons/ChevronLeft';
 import { Whatsapp } from './icons/Whatsapp';
-import { Instagram } from './icons/Instagram';
+import { Instagram20 } from './icons/Instagram-20';
+import { Facebook } from './icons/Facebook';
+import { LinkedIn } from './icons/Linkedin';
 import { Close } from './icons/Close';
 import { Link } from 'react-router-dom'
 
@@ -151,15 +153,15 @@ function MenuMobile() {
               Whatsapp
             </Link>
             <Link className="list-item list-item--with-icon" to="https://www.instagram.com/inergio.ingenieria/?hl=es-la">
-              <Icon iconSvg={<Instagram />} />
+              <Icon iconSvg={<Instagram20 />} />
               Instagram
             </Link>
             <Link className="list-item list-item--with-icon" to="https://www.linkedin.com/in/inergio-ingenier%C3%ADa-788135279/">
-              <Icon iconSvg={<Whatsapp />} />
+              <Icon iconSvg={<LinkedIn />} />
               LinkedIn
             </Link>
             <Link className="list-item list-item--with-icon" to="https://wa.me/c/5493416590047">
-              <Icon iconSvg={<Whatsapp />} />
+              <Icon iconSvg={<Facebook />} />
               Facebook
             </Link>
           </ul>
