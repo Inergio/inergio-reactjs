@@ -148,7 +148,7 @@ function MenuMobile() {
             <Link className="list-item" to="/novedades">
               Novedades
             </Link>
-            <Link className="list-item list-item--with-icon" to="https://wa.me/c/5493416590047">
+            <Link className="list-item list-item--with-icon" style={{ marginTop: 'auto'}} to="https://wa.me/c/5493416590047">
               <Icon iconSvg={<Whatsapp />} />
               Whatsapp
             </Link>
