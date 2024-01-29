@@ -31,7 +31,7 @@
 
 			.title {
 				font-size: 1.4rem;
-    		font-weight: 500;
+				font-weight: 500;
 			}
 
 			.text {
@@ -46,39 +46,20 @@
 
 		@media (min-width: 576px) {
 			&__img {
-				height: 200px;
+				max-height: 200px;
 				display: flex;
 				align-items: center;
 				overflow: hidden;
 				border-radius: 12px 12px 0 0;
-
-				img {
-					max-height: unset;
-				}
 			}
 		}
 
 		@media (min-width: 992px) {
-			flex-direction: row;
-			background: transparent;
 			box-shadow: unset;
-			gap: 2rem;
 
 			&__img {
-				width: 33%;
-				min-width: 33%;
-				position: sticky;
-				top: 2rem;
-				display: flex;
-				align-items: flex-start;
-				overflow: unset;
-				height: 100%;
-
 				img {
-					border-radius: 50%;
-					position: sticky;
-					top: 10px;
-          aspect-ratio: 1;
+					aspect-ratio: 1;
 				}
 			}
 

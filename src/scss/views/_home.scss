@@ -306,7 +306,7 @@ body {
         grid-template-columns: repeat(1, minmax(0, 350px));
         gap: 1.5rem;
         justify-content: center;
-        max-width: 1350px;
+        max-width: 1400px;
         padding: 0 1.5rem;
 
         .card {
@@ -349,7 +349,7 @@ body {
         grid-template-columns: repeat(auto-fill, minmax(0, 450px));
         gap: 1.5rem;
         justify-content: center;
-        max-width: 1350px;
+        max-width: 1400px;
 
         @media (min-width: 768px) {
           margin-top: 4rem;

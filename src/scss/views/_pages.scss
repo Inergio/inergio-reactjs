@@ -18,6 +18,10 @@
     color: var(--deep-koamaru-950);
     font-weight: 500;
     margin: 0 auto 0.5rem;
+
+    @media (min-width: 576px) {
+      font-size: 2rem;
+    }
   }
 
   &__subtitle {
@@ -80,7 +84,7 @@
   &-content--news {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 2.5rem;
     max-width: 1000px;
     margin: auto;
   }
