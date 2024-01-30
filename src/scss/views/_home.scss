@@ -287,7 +287,7 @@ body {
   }
 
   &--card {
-    background: var(--deep-koamaru-400);
+    background: var(--bg-transparent);
     min-height: 100vh;
 
     .section {
@@ -334,6 +334,7 @@ body {
 
   &--about-us {
     min-height: 100%;
+    background-color: var(--main-bg-color-light);
 
     .section__title {
       border-bottom: 2px solid #FFBA48;
@@ -405,9 +406,18 @@ body {
   }
 
   &--us-networks {
-    background: var(--deep-koamaru-200);
+    background: var(--deep-koamaru-950);
 
     .section {
+      &__title {
+        color: var(--deep-koamaru-100);
+        padding-bottom: 1rem;
+      }
+
+      &__subtitle {
+        color: var(--deep-koamaru-200);
+      }
+
       &__items {
         display: flex;
         gap: 1rem;
@@ -439,7 +449,7 @@ body {
             transition: all 0.2s ease-in-out;
 
             &:hover {
-              box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
+              box-shadow: -0px 9px 8px -7px #ffffff;
               transform: translateY(-1px);
             }
           }
@@ -488,10 +498,6 @@ body {
     color: var(--lt-color-gray-700);
     padding: 1rem 0;
     text-wrap: pretty;
-  }
-
-  &--services {
-    // padding: 1rem;
   }
 }
 
