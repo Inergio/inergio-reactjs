@@ -49,31 +49,25 @@ function AboutUs() {
       <div className="page__content">
         <div className="content__right">
           {aboutUsItemsRight.map((item, index) => (
-            <>
-              {/* <img src="" alt="" loading='lazy' /> */}
-              <div className="section" key={index}>
-                <div className="section__title">{item.title}</div>
-                <div
-                  className="section__content"
-                  dangerouslySetInnerHTML={{ __html: item.content }}
-                />
-              </div>
-            </>
+            <div className="section" key={`right_${index}_${item.title}`}>
+              <div className="section__title">{item.title}</div>
+              <div
+                className="section__content"
+                dangerouslySetInnerHTML={{ __html: item.content }}
+              />
+            </div>
           ))}
         </div>
 
         <div className="content__left">
           {aboutUsItemsLeft.map((item, index) => (
-            <>
-              {/* <img src="" alt="" loading='lazy' /> */}
-              <div className="section" key={index}>
-                <div className="section__title">{item.title}</div>
-                <div
-                  className="section__content"
-                  dangerouslySetInnerHTML={{ __html: item.content }}
-                />
-              </div>
-            </>
+            <div className="section" key={`left_${index}_${item.title}`}>
+              <div className="section__title">{item.title}</div>
+              <div
+                className="section__content"
+                dangerouslySetInnerHTML={{ __html: item.content }}
+              />
+            </div>
           ))}
         </div>
       </div>

@@ -8,6 +8,10 @@ function News() {
 
   const scrollToNews = () => {
     const hash = window.location.hash
+
+    // Si no hay que redireccionar a ninguna novedad sale de la funcion
+    if ( hash.length === 0 ) return
+
     const newsElement = document.querySelector(hash);
     
     if (newsElement) {
