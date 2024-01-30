@@ -1,8 +1,47 @@
-import React from 'react';
+import React, { useEffect, useRef } from "react";
 import imagen1 from '../assets/landing/Calefacción.webp';
 
 
 function News() {
+  const arrayImgRef = useRef([]);
+  let loadedImgs
+
+  const scrollToNews = () => {
+    const hash = window.location.hash
+    const newsElement = document.querySelector(hash);
+    
+    if (newsElement) {
+      const offsetTop = newsElement.offsetTop - 100;
+      window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+    }
+  };
+  
+  const handleImagenCargada = () => {
+    if (loadedImgs) return
+    
+    loadedImgs = arrayImgRef.current.every((imagen) => imagen.complete)
+    
+    if (loadedImgs) {
+      scrollToNews()
+    }
+  };
+  
+  useEffect(() => {
+    const imagenes = document.querySelectorAll('img');
+    
+    arrayImgRef.current = Array.from(imagenes);
+    
+    arrayImgRef.current.forEach((imagen) => {
+      imagen.addEventListener('load', handleImagenCargada);
+    });
+
+    return () => {
+      arrayImgRef.current.forEach((imagen) => {
+        imagen.removeEventListener('load', handleImagenCargada);
+      });
+    };
+  }, []);
+
   return (
     <div className="page">
       <div className="page__top">

@@ -20,7 +20,7 @@ function CardHome(props) {
         <div className="card__data">
           {data}
         </div>
-        <Link to={`${link}#news-card-${index}`} className="c-btn c-btn-contained-primary" target='_blank' rel='noreferrer'>
+        <Link to={`${link}#news-card-${index}`} className="c-btn c-btn-contained-primary">
           Ver más
         </Link>
       </div>
