@@ -30,7 +30,10 @@ function MenuMobile() {
     const menu = document.querySelector(".c-menu");
 
     menu.addEventListener("click", (event) => {
-      if (event.target.classList.contains("category-link")) {
+      // TODO: volver el if cuando haya subcategorias
+      // if (event.target.classList.contains("category-link")) {
+
+      if (true) {
         closeMenu();
       } else if (event.target.classList.contains("list-item--with-sublist")) {
         showSublist(event.target);

@@ -36,7 +36,7 @@ function UsNetworks() {
 
       <div className="section__items">
         {networks.map((network, index) => (
-          <a href={network.link} target="_blank" key={index}>
+          <a href={network.link} target="_blank" key={index} rel='noreferrer'>
             <img src={network.src} alt="" loading='lazy' />
           </a>
         ))}
