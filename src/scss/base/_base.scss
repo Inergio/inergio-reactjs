@@ -25,6 +25,19 @@ html, body {
   }
 }
 
+.loader-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .icon-svg {
+    width: 150px;
+    animation: 3s infinite loaderLogo;
+  }
+}
+
 .body-div {
   min-height: 100vh;
 }
@@ -50,4 +63,18 @@ footer {
       color: var(--white);
     }
   }
+}
+
+@keyframes loaderLogo {
+	0% {
+		fill: var(--deep-koamaru-950);
+	}
+
+	50% {
+    fill: var(--deep-koamaru-300);
+	}
+
+	100% {
+		fill: var(--deep-koamaru-950);
+	}
 }
