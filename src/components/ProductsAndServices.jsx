@@ -13,7 +13,7 @@ import imgProduct12 from "../assets/landing/img-product-12.webp";
 import imgProduct13 from "../assets/landing/img-product-13.webp";
 import imgProduct14 from "../assets/landing/img-product-14.webp";
 import Swiper from "swiper";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useRef } from "react";
 
 function ProductsAndServices() {
   const cardsInfoRef = useRef(null);
@@ -21,10 +21,10 @@ function ProductsAndServices() {
   useEffect(() => {
     const swiperOptions = {
       centeredSlides: false,
-      slidesPerView: 1,
+      slidesPerView: 1.1,
       breakpoints: {
         576: {
-          slidesPerView: 2,
+          slidesPerView: 2.1,
         },
 
         768: {
