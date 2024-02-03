@@ -39,6 +39,7 @@ function AboutUs() {
 
   return (
     <div className="page page--about-us">
+      <div div class="gradient"></div>
       <div className="page__top">
         <div className="page__title">Sobre nosotros</div>
         <div className="page__subtitle">
