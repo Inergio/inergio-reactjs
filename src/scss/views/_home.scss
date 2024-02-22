@@ -15,7 +15,7 @@ body {
     min-height: 100vh;
 
     @media (min-width: 1950px) {
-      max-width: 1400px;
+      max-width: 1800px;
       margin: auto;
     }
   }
@@ -41,16 +41,17 @@ body {
     backdrop-filter: blur(3px);
     transition: .8s;
     position: absolute;
-    opacity: 0;
-
+    
     @media (min-width: 768px) {
+      opacity: 0;
       padding: 3rem;
+
+      &.show {
+        transform: translate(0) !important;
+        opacity: 1;
+      }
     }
 
-    &.show {
-      transform: translate(0) !important;
-      opacity: 1;
-    }
 
     .data {
       .title {
@@ -195,7 +196,10 @@ body {
       min-height: 30%;
       box-shadow: 0 -3px 15px 10px #00000033;
       border-top: 5px solid #FFBA48;
-      transform: translateY(100%);
+      
+      @media (min-width: 768px) {
+        transform: translateY(100%);
+      }
 
       .data {
         max-width: 900px;
@@ -226,9 +230,9 @@ body {
   &.right {
     .landing-section__info {
       bottom: 0;
-      transform: translateY(100%);
-
+      
       @media (min-width: 768px) {
+        transform: translateY(100%);
         max-width: 50vw;
         top: 0;
         bottom: unset;
