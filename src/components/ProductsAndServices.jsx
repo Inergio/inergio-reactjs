@@ -17,7 +17,7 @@ import { useEffect, useRef } from "react";
 
 function ProductsAndServices() {
   const cardsInfoRef = useRef(null);
-  
+
   useEffect(() => {
     const swiperOptions = {
       centeredSlides: false,
@@ -46,10 +46,10 @@ function ProductsAndServices() {
 
     const serviceSlider = new Swiper(".landing-section__slider", swiperOptions);
 
-    const cards = document.querySelectorAll('.card--services .card__info');
+    const cards = document.querySelectorAll(".card--services .card__info");
     cardsInfoRef.current = cards;
 
-    serviceSlider.on('slideChange', () => {
+    serviceSlider.on("slideChange", () => {
       showLessOnAll();
     });
 
@@ -58,25 +58,24 @@ function ProductsAndServices() {
     return () => {
       serviceSlider.destroy();
     };
-    
-  }, [])
+  }, []);
 
   const checkHeight = (card) => {
-    card.classList.remove('show')
+    card.classList.remove("show");
 
     if (card.scrollHeight > card.offsetHeight) {
-      card.classList.add('hide')
+      card.classList.add("hide");
     }
-  }
+  };
 
   const showMore = (event) => {
-    showLessOnAll()
+    showLessOnAll();
 
-    const info = event.currentTarget.closest('.card--services .card__info')
+    const info = event.currentTarget.closest(".card--services .card__info");
 
-    info.classList.remove('hide')
-    info.classList.add('show')
-  }
+    info.classList.remove("hide");
+    info.classList.add("show");
+  };
 
   const showLessOnAll = () => {
     if (cardsInfoRef.current) {
@@ -85,7 +84,7 @@ function ProductsAndServices() {
       });
     }
   };
-  
+
   return (
     <div className="landing-section__slider swiper">
       {/* El problema se dá desde los 768px, descarto que sea por la img bg de la section, tampoco es por las imagenes dentro de las cards, probablemente sea de Swiper */}
@@ -97,13 +96,20 @@ function ProductsAndServices() {
               <img alt="" src={imgProduct1} loading="lazy" />
             </div>
             <div className="card__info">
-              <div className="see-more" onClick={showMore}>Ver más</div>
+              <div className="see-more" onClick={showMore}>
+                Ver más
+              </div>
               <div className="card__name">Climatización</div>
               <div className="card__data">
                 Desarrollamos y comercializamos proyectos integrales de
-                climatización, proporcionando sistemas de aire
-                acondicionado de alta calidad para una amplia gama de
-                aplicaciones tanto en entornos comerciales o industriales.
+                climatización, proporcionando sistemas de aire acondicionado de
+                alta calidad para una amplia gama de aplicaciones tanto en
+                entornos comerciales como industriales. Además, llevamos a cabo
+                el plan de mantenimiento preventivo de los equipos y sistemas.
+                Algunos de los sistemas que trabajamos son BAG IN - BAG - OUT,
+                baja silueta, chillers, enfriadoras de agua, FAN - COILS, ROOF -
+                TOP, split (VRV, City - Multi), inverter, piso techo, torres de
+                enfriamiento, etc.
               </div>
             </div>
           </div>
@@ -115,13 +121,17 @@ function ProductsAndServices() {
               <img alt="" src={imgProduct2} loading="lazy" />
             </div>
             <div className="card__info">
-              <div className="see-more" onClick={showMore}>Ver más</div>
-              <div className="card__name">Refrigeración</div>
+              <div className="see-more" onClick={showMore}>
+                Ver más
+              </div>
+              <div className="card__name">Calefacción</div>
               <div className="card__data">
-                Nos especializamos en instalaciones comerciales e
-                industriales, en sistemas convencionales y de bajo
-                consumo. <br></br>Diseño, desarrollo y montaje de cámaras
-                frigoríficas de baja y media temperatura.
+                Brindamos asesoramiento técnico y análisis de proyecto para
+                sistemas de calefacción central, calderas, radiadores,
+                termotanques de alta recuperación y calefactores eléctricos.
+                Realizamos la automatización y control de los diferentes
+                sistemas y equipos. Además, contamos con una amplia gama de
+                equipamientos y productos.
               </div>
             </div>
           </div>
@@ -133,14 +143,19 @@ function ProductsAndServices() {
               <img alt="" src={imgProduct3} loading="lazy" />
             </div>
             <div className="card__info">
-              <div className="see-more" onClick={showMore}>Ver más</div>
-              <div className="card__name">Calefacción</div>
+              <div className="see-more" onClick={showMore}>
+                Ver más
+              </div>
+              <div className="card__name">Refrigeración</div>
               <div className="card__data">
-                Brindamos asesoramiento técnico y análisis de proyecto
-                para sistemas de calefacción central, calderas,
-                radiadores, termotanques de alta recuperación y
-                calefactores eléctricos. <br></br>Realizamos la
-                automatización de los diferentes sistemas y equipos.
+                Somos especialistas en sistemas de refrigeración comercial e
+                industrial de media, baja temperatura y super congelado.
+                Diseñamos, desarrollamos y realizamos el montaje de cámaras
+                frigoríficas. Realizamos el mantenimiento preventivo y
+                correctivo, además de implementar la automatización y control de
+                los diferentes sistemas.
+                <br />
+                Contamos con una amplia gama de equipamientos y productos.
               </div>
             </div>
           </div>
@@ -152,14 +167,19 @@ function ProductsAndServices() {
               <img alt="" src={imgProduct4} loading="lazy" />
             </div>
             <div className="card__info">
-              <div className="see-more" onClick={showMore}>Ver más</div>
-              <div className="card__name">Ventilación</div>
+              <div className="see-more" onClick={showMore}>
+                Ver más
+              </div>
+              <div className="card__name">Ventilación y Extracción</div>
               <div className="card__data">
-                Proporcionamos soluciones completas de inyección,
-                extracción y renovación de aire. Diseñamos sistemas que
-                favorecen un ambiente saludable, cómodo y, libre de
-                contaminantes, que proporcionan un flujo de aire fresco y
-                limpio en espacios cerrados.
+                Proporcionamos soluciones completas de inyección, renovación y
+                extracción de aire. Diseñamos sistemas que garantizan un
+                ambiente saludable y confortable, eliminando contaminantes y
+                proporcionando un flujo de aire fresco y limpio en espacios
+                cerrados.
+                <br />
+                Fabricamos conductos de aire e implementamos la automatización y
+                control de los diferentes sistemas.
               </div>
             </div>
           </div>
@@ -171,13 +191,13 @@ function ProductsAndServices() {
               <img alt="" src={imgProduct5} loading="lazy" />
             </div>
             <div className="card__info">
-              <div className="see-more" onClick={showMore}>Ver más</div>
-              <div className="card__name">Electricidad</div>
+              <div className="see-more" onClick={showMore}>
+                Ver más
+              </div>
+              <div className="card__name">Servicios Energéticos</div>
               <div className="card__data">
-                Llevamos a cabo relevamiento, diseño y desarrollo de
-                proyectos de instalaciones eléctricas. Identificamos los
-                activos que deben repararse, renovarse o sustituirse para
-                conseguir las objetivos de eficiencia energética.
+                Servicios de Electricidad, Energías renovables, Domótica e
+                Iluminación.
               </div>
             </div>
           </div>
@@ -189,13 +209,16 @@ function ProductsAndServices() {
               <img alt="" src={imgProduct6} loading="lazy" />
             </div>
             <div className="card__info">
-              <div className="see-more" onClick={showMore}>Ver más</div>
-              <div className="card__name">Energías Renovables</div>
+              <div className="see-more" onClick={showMore}>
+                Ver más
+              </div>
+              <div className="card__name">Domótica</div>
               <div className="card__data">
-                Brindamos soluciones para ahorrar energía y así también
-                reducir costos operativos. Desarrollamos proyectos,
-                comercializamos materiales y productos, realizamos
-                instalaciones y trámites para el programa ERA.
+                Contamos con una amplia gama de dispositivos para domotizar
+                instalaciones eléctricas. Tanto para accionamiento de forma
+                remota desde un Smartphone como también para realizar acciones
+                de una interacción verbal, ya sea hablando con ALEXA, GOOGLE o
+                SIRI en el caso de Apple.
               </div>
             </div>
           </div>
@@ -207,14 +230,34 @@ function ProductsAndServices() {
               <img alt="" src={imgProduct7} loading="lazy" />
             </div>
             <div className="card__info">
-              <div className="see-more" onClick={showMore}>Ver más</div>
-              <div className="card__name">Cámaras Frigoríficas</div>
+              <div className="see-more" onClick={showMore}>
+                Ver más
+              </div>
+              <div className="card__name">Electricidad</div>
               <div className="card__data">
-                Proyecto, desarrollo, montaje y automatización de sistemas
-                para cámaras de frío de baja y media temperatura.<br></br>
-                Trasladables y multifuncionales: food truck, consultorios,
-                oficinas, abrevaderos, etc. Con placas termoaislantes y
-                termoacústicas.
+                Llevamos a cabo el relevamiento, diseño y desarrollo de planos y
+                proyectos de instalaciones eléctricas. Identificamos los activos
+                que deben repararse, renovarse o sustituirse para conseguir los
+                objetivos de eficiencia energética.
+                <br />
+                También desarrollamos las actividades de medición del
+                rendimiento de las instalaciones edilicias en lo que respecta a
+                consumo de energía, para su debida corrección de consumos. Otros
+                servicios:
+                <br />
+                • Automatización y control de sectores, equipos y sistemas
+                <br />
+                • Diseño de tableros monofásicos e industriales
+                <br />
+                • Instalaciones subterráneas
+                <br />
+                • Medición de puesta a tierra
+                <br />
+                • Proyecto, construcción y dirección de instalaciones
+                electromecánicas cuya potencia no supere los 11KW (15Hp)
+                <br />• Proyecto, dirección y/o ejecución de instalaciones
+                eléctricas MONO y TRIFÁSICAS hasta los 50KVA y 250V de tensión
+                contra tierra o 400V entre fase para construcciones edilicias
               </div>
             </div>
           </div>
@@ -226,20 +269,22 @@ function ProductsAndServices() {
               <img alt="" src={imgProduct8} loading="lazy" />
             </div>
             <div className="card__info">
-              <div className="see-more" onClick={showMore}>Ver más</div>
-              <div className="card__name">
-                Construcción de módulos autónomos y sustentables
+              <div className="see-more" onClick={showMore}>
+                Ver más
               </div>
+              <div className="card__name">Iluminación Led Smart</div>
               <div className="card__data">
-                Construcción de módulos autonómos y sustentables.<br></br>
-                Los módulos están diseñados para funcionar de forma
-                independiente de la red eléctrica y de los servicios
-                públicos.<br></br>Están equipados con sistemas de energía
-                renovable, como paneles solares y eólicos, que les
-                permiten generar su propia electricidad.<br></br>También
-                cuentan con sistemas de almacenamiento de energía, que les
-                permiten almacenar el excedente de electricidad para su
-                uso posterior.
+                Diseñamos proyectos de iluminación para cada cliente, según las
+                necesidades. Contamos con un equipo de trabajo listo para llevar
+                la iluminación de los espacios a un siguiente nivel con
+                tecnología LED de alta eficiencia.
+                <br />
+                • Iluminación de espacios deportivos
+                <br />
+                • Iluminación exterior decorativa
+                <br />
+                • Iluminación RGB
+                <br />• Iluminación Industrial
               </div>
             </div>
           </div>
@@ -251,14 +296,19 @@ function ProductsAndServices() {
               <img alt="" src={imgProduct9} loading="lazy" />
             </div>
             <div className="card__info">
-              <div className="see-more" onClick={showMore}>Ver más</div>
-              <div className="card__name">Domótica</div>
+              <div className="see-more" onClick={showMore}>
+                Ver más
+              </div>
+              <div className="card__name">Energía Solar</div>
               <div className="card__data">
-                Brindamos asesoramiento técnico y análisis de proyecto
-                para sistemas de calefacción central, calderas,
-                radiadores, termotanques de alta recuperación y
-                calefactores eléctricos.<br></br> Realizamos la
-                automatización de las diferentes sistemas y equipos.
+                Brindamos soluciones para el ahorro de energía y la reducción de
+                costos operativos, además de contribuir al cuidado del medio
+                ambiente que cada día más lo requiere.
+                <br />
+                Proporcionamos el uso de la energía solar para los siguientes
+                servicios: generación de electricidad, calentamiento de agua,
+                bombas de agua autónomas, climatización de piscinas y pisos
+                radiantes.
               </div>
             </div>
           </div>
@@ -270,9 +320,32 @@ function ProductsAndServices() {
               <img alt="" src={imgProduct10} loading="lazy" />
             </div>
             <div className="card__info">
-              <div className="see-more" onClick={showMore}>Ver más</div>
-              <div className="card__name">Automatización</div>
-              <div className="card__data">De equipos y sistemas</div>
+              <div className="see-more" onClick={showMore}>
+                Ver más
+              </div>
+              <div className="card__name">Modulos Autónomos y Sustentables</div>
+              <div className="card__data">
+                Brindamos el servicio de un techo con todos sus servicios para
+                lugares que no disponen del mismo. Las opciones pueden ser
+                consultorios, oficinas, obradores y Food Truck. Son fabricados
+                con estructura y placas térmicas lo que garantiza un alto grado
+                de aislamiento térmico y acústico.
+                <br />
+                El sistema de generación de energía es acorde a la necesidad de
+                cada cliente visto que los mismos pueden poseer distintos
+                dispositivos como aire acondicionado, cocinas eléctricas, etc.
+                <br />
+                A diferencia de los habituales contenedores que se utilizan para
+                diferentes proyectos, nuestros módulos son ultra livianos,
+                fáciles de trasladar y totalmente aislantes frente a la
+                temperatura, la humedad y los sonidos exteriores. Además, son de
+                rápido montaje y adaptables a construcciones preexistentes.
+                <br />
+                Por último, cabe resaltar que estás mismas placas también pueden
+                emplearse para las divisiones de interiores o el revestimiento
+                de techos en casas, cabañas y naves industriales, aportando así
+                al aislamiento de estos espacios.
+              </div>
             </div>
           </div>
         </div>
@@ -283,13 +356,14 @@ function ProductsAndServices() {
               <img alt="" src={imgProduct11} loading="lazy" />
             </div>
             <div className="card__info">
-              <div className="see-more" onClick={showMore}>Ver más</div>
+              <div className="see-more" onClick={showMore}>
+                Ver más
+              </div>
               <div className="card__name">Venta de equipos</div>
               <div className="card__data">
-                De climatización, refrigeración, calefacción y
-                ventilación. Además de todo lo relacionada a la energía
-                Fotovoltaica: paneles, termotanques, solares, inversores,
-                etc
+                De climatización, refrigeración, calefacción y ventilación.
+                Además de todo lo relacionada a la energía Fotovoltaica:
+                paneles, termotanques, solares, inversores, etc
               </div>
             </div>
           </div>
@@ -301,54 +375,21 @@ function ProductsAndServices() {
               <img alt="" src={imgProduct12} loading="lazy" />
             </div>
             <div className="card__info">
-              <div className="see-more" onClick={showMore}>Ver más</div>
+              <div className="see-more" onClick={showMore}>
+                Ver más
+              </div>
               <div className="card__name">Optimización</div>
               <div className="card__data">
-                Proponemos mejoras para establecer procesos más
-                sostenibles que además generan una mayor eficiencia
-                operacional elevando el rendimiento de las empresas e
-                industrias.
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="swiper-slide">
-          <div className="card card--services">
-            <div className="card__image">
-              <img alt="" src={imgProduct13} loading="lazy" />
-            </div>
-            <div className="card__info">
-              <div className="see-more" onClick={showMore}>Ver más</div>
-              <div className="card__name">Mantenimiento Preventivo</div>
-              <div className="card__data">
-                Minimización de los costos operativos, prolongando el
-                ciclo de vida del equipamiento, implementando sistemas y
-                procedimientos de mantenimiento preventivo.
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="swiper-slide">
-          <div className="card card--services">
-            <div className="card__image">
-              <img alt="" src={imgProduct14} loading="lazy" />
-            </div>
-            <div className="card__info">
-              <div className="see-more" onClick={showMore}>Ver más</div>
-              <div className="card__name">Mantenimiento Correctivo</div>
-              <div className="card__data">
-                Evolución y diagnóstico para detectar si es más rentable
-                reparar o reemplazar un equipo, disponiendo de los costos
-                de reparación y mantenimiento.
+                Proponemos mejoras para establecer procesos más sostenibles que
+                además generan una mayor eficiencia operacional elevando el
+                rendimiento de las empresas e industrias.
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export { ProductsAndServices };

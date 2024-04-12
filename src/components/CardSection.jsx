@@ -1,59 +1,56 @@
-import React from 'react'
-import { CardHome } from './CardHome';
-import imagen1 from '../assets/landing/Calefacción.webp';
+import React from "react";
+import { CardHome } from "./CardHome";
+import imagen1 from "../assets/landing/Calefacción.webp";
 
 function CardSection() {
   const cardsArray = [
     {
       image: imagen1,
-      name: "Empresa 1",
-      date: "12/11/2023",
-      data: "Estuvimos en una capacitacion para mejorar el servicio que brindamos. Nuestros profesionales se especializaron en las ultimás tecnologías de refrigeración",
-      link: "/novedades"
+      name: "SPONSOR Torneo Regional de Rugby",
+      date: "03/2024",
+      data: "Acompañaremos los partidos de todo el certamen siendo sponsor del XXV Torneo Litoral - Unión de Rugby Rosario.",
+      link: "/novedades",
     },
     {
       image: imagen1,
-      name: "Empresa 2",
-      date: "12/11/2023",
-      data: "Estuvimos en una capacitacion para mejorar el servicio que brindamos. Nuestros profesionales se especializaron en las ultimás tecnologías de refrigeración",
-      link: "/novedades"
+      name: "Colégio Cayetano Errico (Capitán Bermúdez) 2",
+      date: "03/2024",
+      data: "Llevamos a cabo una gran obra eléctrica que incluye nuevo cableado de todo el establecimiento, montaje de nuevos tableros seccionales y general.",
+      link: "/novedades",
     },
     {
       image: imagen1,
-      name: "Empresa 3",
-      date: "12/11/2023",
-      data: "Estuvimos en una capacitacion para mejorar el servicio que brindamos. Nuestros profesionales se especializaron en las ultimás tecnologías de refrigeración",
-      link: "/novedades"
+      name: "YPF OPESSA (Rosario)",
+      date: "03/2024",
+      data: "Relevamientos y prestación de servicios de climatización.",
+      link: "/novedades",
     },
     {
       image: imagen1,
-      name: "Empresa 4",
-      date: "12/11/2023",
-      data: "Estuvimos en una capacitacion para mejorar el servicio que brindamos. Nuestros profesionales se especializaron en las ultimás tecnologías de refrigeración",
-      link: "/novedades"
+      name: "Heroica - Panadería Del Bien (Rosario)",
+      date: "03/2024",
+      data: "Servicios energéticos y de climatización",
+      link: "/novedades",
     },
     {
       image: imagen1,
-      name: "Empresa 5",
-      date: "12/11/2023",
-      data: "Estuvimos en una capacitacion para mejorar el servicio que brindamos. Nuestros profesionales se especializaron en las ultimás tecnologías de refrigeración",
-      link: "/novedades"
+      name: "La Fazenda - Café (Fisherton Plaza, Funes)",
+      date: "03/2024",
+      data: "Servicios de climatización.",
+      link: "/novedades",
     },
     {
       image: imagen1,
-      name: "Empresa 6",
-      date: "12/11/2023",
-      data: "Estuvimos en una capacitacion para mejorar el servicio que brindamos. Nuestros profesionales se especializaron en las ultimás tecnologías de refrigeración",
-      link: "/novedades"
+      name: "Certificación Sistemas INVERTER",
+      date: "11/2023",
+      data: "",
+      link: "/novedades",
     },
-    
-  ]
+  ];
 
   return (
     <section className="section-home section-home--card">
-      <div className="section__title">
-        Novedades
-      </div>
+      <div className="section__title">Novedades</div>
 
       <div className="section__grid">
         {cardsArray.map((card, index) => (
@@ -61,7 +58,7 @@ function CardSection() {
         ))}
       </div>
     </section>
-  )
+  );
 }
 
-export { CardSection }
+export { CardSection };
