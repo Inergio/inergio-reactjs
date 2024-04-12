@@ -60,20 +60,10 @@ function News() {
           </div>
           <div className="news-card__content">
             <div className="title">
-              Novedad 1
+              SPONSOR Torneo Regional de Rugby
             </div>
             <div className="text">
-              "Nombre de empresa" nos contrató para un servicio de remodelacion total de sus equipamientos frigorificos además de la instalacion de paneles solares. 
-              "Nombre de empresa" nos contrató para un servicio de remodelacion total de sus equipamientos frigorificos además de la instalacion de paneles solares.
-              "Nombre de empresa" nos contrató para un servicio de remodelacion total de sus equipamientos frigorificos además de la instalacion de paneles solares.
-              "Nombre de empresa" nos contrató para un servicio de remodelacion total de sus equipamientos frigorificos además de la instalacion de paneles solares.
-              "Nombre de empresa" nos contrató para un servicio de remodelacion total de sus equipamientos frigorificos además de la instalacion de paneles solares.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur hic labore adipisci provident exercitationem! Architecto repudiandae ipsa reprehenderit odio velit eum, est commodi nulla ducimus nam doloremque, vitae animi incidunt?
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus officiis, natus officia laboriosam molestiae quasi doloremque laudantium eius. Consectetur, inventore? Deserunt suscipit aliquam recusandae dignissimos consectetur ad aliquid aspernatur alias.
-              Adipisci recusandae animi, ipsum tenetur at quasi alias dicta nulla eum corporis porro aliquam laborum reiciendis corrupti ad expedita ullam? Dignissimos amet quos porro vel possimus, eligendi accusantium nam ullam.
-              Architecto sint praesentium modi distinctio cum illo minus ullam facilis ducimus. Aliquam a iste facere incidunt obcaecati expedita vero minima molestiae nesciunt id rerum nemo, perspiciatis dicta quam est? Magnam.
-              Minus inventore cupiditate deserunt non rerum eum quos qui dolores. Dolorum excepturi ut totam distinctio blanditiis quidem libero, ipsam necessitatibus architecto, mollitia cumque possimus nulla quasi qui, obcaecati repellendus velit!
-              Vitae repellat tempora magni, repudiandae veritatis alias eius reiciendis consequuntur culpa esse ab? Voluptatibus architecto, dignissimos officiis saepe quisquam laudantium repellendus laborum quia illo eaque, pariatur voluptatum suscipit error aspernatur?
+              Acompañaremos los partidos de todo el certamen siendo sponsor del XXV Torneo Litoral - Unión de Rugby Rosario.
             </div>
           </div>
         </div>
@@ -83,10 +73,10 @@ function News() {
           </div>
           <div className="news-card__content">
             <div className="title">
-              Novedad 2
+              Colégio Cayetano Errico (Capitán Bermúdez) 2
             </div>
             <div className="text">
-              "Nombre de empresa" nos contrató para un servicio de remodelacion total de sus equipamientos frigorificos además de la instalacion de paneles solares. 
+              Llevamos a cabo una gran obra eléctrica que incluye nuevo cableado de todo el establecimiento, montaje de nuevos tableros seccionales y general. 
             </div>
           </div>
         </div>
@@ -96,10 +86,10 @@ function News() {
           </div>
           <div className="news-card__content">
             <div className="title">
-              Novedad 3
+              YPF OPESSA (Rosario)
             </div>
             <div className="text">
-              "Nombre de empresa" nos contrató para un servicio de remodelacion total de sus equipamientos frigorificos además de la instalacion de paneles solares. 
+              Relevamientos y prestación de servicios de climatización.
             </div>
           </div>
         </div>
@@ -109,10 +99,10 @@ function News() {
           </div>
           <div className="news-card__content">
             <div className="title">
-              Novedad 4
+              Heroica - Panadería Del Bien (Rosario)
             </div>
             <div className="text">
-              "Nombre de empresa" nos contrató para un servicio de remodelacion total de sus equipamientos frigorificos además de la instalacion de paneles solares. 
+              Servicios energéticos y de climatización
             </div>
           </div>
         </div>
@@ -122,10 +112,10 @@ function News() {
           </div>
           <div className="news-card__content">
             <div className="title">
-              Novedad 5
+              La Fazenda - Café (Fisherton Plaza, Funes)
             </div>
             <div className="text">
-              "Nombre de empresa" nos contrató para un servicio de remodelacion total de sus equipamientos frigorificos además de la instalacion de paneles solares. 
+              Servicios de climatización. 
             </div>
           </div>
         </div>
@@ -135,10 +125,10 @@ function News() {
           </div>
           <div className="news-card__content">
             <div className="title">
-              Novedad 6
+              Certificación Sistemas INVERTER
             </div>
             <div className="text">
-              "Nombre de empresa" nos contrató para un servicio de remodelacion total de sus equipamientos frigorificos además de la instalacion de paneles solares. 
+              
             </div>
           </div>
         </div>
