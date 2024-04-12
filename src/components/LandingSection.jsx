@@ -3,7 +3,7 @@ import imgMain from "../assets/landing/Home.webp";
 import imgSection1 from "../assets/landing/section1.webp";
 import imgSection3 from "../assets/landing/section3.webp";
 import logoHome from "../assets/landing/logo-home.webp";
-import { ProductsAndServices } from "../components/ProductsAndServices"
+import { ProductsAndServices } from "../components/ProductsAndServices";
 import "swiper/css/bundle";
 
 function LandingSection(props) {
@@ -98,9 +98,7 @@ function LandingSection(props) {
           </div>
         )}
 
-        {name === "productsAndServices" && (
-          <ProductsAndServices/>
-        )}
+        {name === "productsAndServices" && <ProductsAndServices />}
       </div>
 
       <div className="landing-section__info">
@@ -146,13 +144,23 @@ function LandingSection(props) {
             <div className="data">
               <h2 className="title">Servicios</h2>
               <div className="data__content">
-                Brindamos múltiples servicios profesionales, los cuáles posibilitan que empresas, constructoras e industrias cuenten con un único proveedor para solucionar diferentes situaciones y necesidades. 
+                Brindamos múltiples servicios profesionales, los cuáles
+                posibilitan que empresas, constructoras e industrias cuenten con
+                un único proveedor para solucionar diferentes situaciones y
+                necesidades.
                 <br />
                 <br />
-                Desde el inicio de cada proyecto aportamos seguridad a los sistemas y personas que trabajan con ellos. Garantizamos un diseño óptimo, implementación profesional y mantenimiento continuo de los sistemas que se traduce en un ahorro energético y económico para las empresas.
+                Desde el inicio de cada proyecto aportamos seguridad a los
+                sistemas y personas que trabajan con ellos. Garantizamos un
+                diseño óptimo, implementación profesional y mantenimiento
+                continuo de los sistemas que se traduce en un ahorro energético
+                y económico para las empresas.
                 <br />
                 <br />
-                Contamos con servicio de guardia para URGENCIAS las 24h para aquellos clientes que poseen instalaciones de punto crítico, donde es indispensable mantener los diferentes equipamientos y/o servicios en funcionamiento.
+                Contamos con servicio de guardia para URGENCIAS las 24h para
+                aquellos clientes que poseen instalaciones de punto crítico,
+                donde es indispensable mantener los diferentes equipamientos y/o
+                servicios en funcionamiento.
               </div>
               {/* Dentro de esta seccion deberia haber un carousel con todas las cards de productos y servicios */}
             </div>
@@ -166,9 +174,14 @@ function LandingSection(props) {
             <div className="data">
               <h2 className="title">Sobre nosotros</h2>
               <div className="data__content">
-                Somos especialistas en servicios energéticos, climatización, ventilación y refrigeración para todo tipo de escala de proyectos. Nos dedicamos al diseño, suministro, instalación y mantenimiento de los diferentes sistemas.
+                Somos especialistas en servicios energéticos, climatización,
+                ventilación y refrigeración para todo tipo de escala de
+                proyectos. Nos dedicamos al diseño, suministro, instalación y
+                mantenimiento de los diferentes sistemas.
                 <br />
-                Nuestro amplio conocimiento y experiencia junto a un enfoque integral, garantizan los atributos esenciales para brindar soluciones a los diferentes sectores empresariales.
+                Nuestro amplio conocimiento y experiencia junto a un enfoque
+                integral, garantizan los atributos esenciales para brindar
+                soluciones a los diferentes sectores empresariales.
               </div>
             </div>
           </>
