@@ -1,47 +1,46 @@
 import React, { useEffect, useRef } from "react";
-import imagen1 from '../assets/landing/Calefacción.webp';
-
+import imagen1 from "../assets/landing/Calefacción.webp";
 
 function News() {
   const arrayImgRef = useRef([]);
-  let loadedImgs
+  let loadedImgs;
 
   const scrollToNews = () => {
-    const hash = window.location.hash
+    const hash = window.location.hash;
 
     // Si no hay que redireccionar a ninguna novedad sale de la funcion
-    if ( hash.length === 0 ) return
+    if (hash.length === 0) return;
 
     const newsElement = document.querySelector(hash);
-    
+
     if (newsElement) {
       const offsetTop = newsElement.offsetTop - 100;
-      window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+      window.scrollTo({ top: offsetTop, behavior: "smooth" });
     }
   };
-  
+
   const handleImagenCargada = () => {
-    if (loadedImgs) return
-    
-    loadedImgs = arrayImgRef.current.every((imagen) => imagen.complete)
-    
+    if (loadedImgs) return;
+
+    loadedImgs = arrayImgRef.current.every((imagen) => imagen.complete);
+
     if (loadedImgs) {
-      scrollToNews()
+      scrollToNews();
     }
   };
-  
+
   useEffect(() => {
-    const imagenes = document.querySelectorAll('img');
-    
+    const imagenes = document.querySelectorAll("img");
+
     arrayImgRef.current = Array.from(imagenes);
-    
+
     arrayImgRef.current.forEach((imagen) => {
-      imagen.addEventListener('load', handleImagenCargada);
+      imagen.addEventListener("load", handleImagenCargada);
     });
 
     return () => {
       arrayImgRef.current.forEach((imagen) => {
-        imagen.removeEventListener('load', handleImagenCargada);
+        imagen.removeEventListener("load", handleImagenCargada);
       });
     };
   }, []);
@@ -49,102 +48,109 @@ function News() {
   return (
     <div className="page">
       <div className="page__top">
-        <div className="page__title">
-          Novedades
-        </div>
+        <div className="page__title">Novedades</div>
       </div>
       <div className="page-content page-content--news">
         <div className="news-card" id="news-card-0">
           <div className="news-card__img">
-            <img className="" src={imagen1} alt="Logo facebook" loading='lazy'/>
+            <img
+              className=""
+              src={imagen1}
+              alt="Logo facebook"
+              loading="lazy"
+            />
           </div>
           <div className="news-card__content">
-            <div className="title">
-              Novedad 1
-            </div>
+            <div className="title">SPONSOR Torneo Regional de Rugby</div>
             <div className="text">
-              "Nombre de empresa" nos contrató para un servicio de remodelacion total de sus equipamientos frigorificos además de la instalacion de paneles solares. 
-              "Nombre de empresa" nos contrató para un servicio de remodelacion total de sus equipamientos frigorificos además de la instalacion de paneles solares.
-              "Nombre de empresa" nos contrató para un servicio de remodelacion total de sus equipamientos frigorificos además de la instalacion de paneles solares.
-              "Nombre de empresa" nos contrató para un servicio de remodelacion total de sus equipamientos frigorificos además de la instalacion de paneles solares.
-              "Nombre de empresa" nos contrató para un servicio de remodelacion total de sus equipamientos frigorificos además de la instalacion de paneles solares.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur hic labore adipisci provident exercitationem! Architecto repudiandae ipsa reprehenderit odio velit eum, est commodi nulla ducimus nam doloremque, vitae animi incidunt?
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus officiis, natus officia laboriosam molestiae quasi doloremque laudantium eius. Consectetur, inventore? Deserunt suscipit aliquam recusandae dignissimos consectetur ad aliquid aspernatur alias.
-              Adipisci recusandae animi, ipsum tenetur at quasi alias dicta nulla eum corporis porro aliquam laborum reiciendis corrupti ad expedita ullam? Dignissimos amet quos porro vel possimus, eligendi accusantium nam ullam.
-              Architecto sint praesentium modi distinctio cum illo minus ullam facilis ducimus. Aliquam a iste facere incidunt obcaecati expedita vero minima molestiae nesciunt id rerum nemo, perspiciatis dicta quam est? Magnam.
-              Minus inventore cupiditate deserunt non rerum eum quos qui dolores. Dolorum excepturi ut totam distinctio blanditiis quidem libero, ipsam necessitatibus architecto, mollitia cumque possimus nulla quasi qui, obcaecati repellendus velit!
-              Vitae repellat tempora magni, repudiandae veritatis alias eius reiciendis consequuntur culpa esse ab? Voluptatibus architecto, dignissimos officiis saepe quisquam laudantium repellendus laborum quia illo eaque, pariatur voluptatum suscipit error aspernatur?
+              Acompañaremos los partidos de todo el certamen siendo sponsor del
+              XXV Torneo Litoral - Unión de Rugby Rosario.
             </div>
           </div>
         </div>
         <div className="news-card" id="news-card-1">
           <div className="news-card__img">
-            <img className="" src={imagen1} alt="Logo facebook" loading='lazy' />
+            <img
+              className=""
+              src={imagen1}
+              alt="Logo facebook"
+              loading="lazy"
+            />
           </div>
           <div className="news-card__content">
             <div className="title">
-              Novedad 2
+              Colégio Cayetano Errico (Capitán Bermúdez) 2
             </div>
             <div className="text">
-              "Nombre de empresa" nos contrató para un servicio de remodelacion total de sus equipamientos frigorificos además de la instalacion de paneles solares. 
+              Llevamos a cabo una gran obra eléctrica que incluye nuevo cableado
+              de todo el establecimiento, montaje de nuevos tableros seccionales
+              y general.
             </div>
           </div>
         </div>
         <div className="news-card" id="news-card-2">
           <div className="news-card__img">
-            <img className="" src={imagen1} alt="Logo facebook" loading='lazy' />
+            <img
+              className=""
+              src={imagen1}
+              alt="Logo facebook"
+              loading="lazy"
+            />
           </div>
           <div className="news-card__content">
-            <div className="title">
-              Novedad 3
-            </div>
+            <div className="title">YPF OPESSA (Rosario)</div>
             <div className="text">
-              "Nombre de empresa" nos contrató para un servicio de remodelacion total de sus equipamientos frigorificos además de la instalacion de paneles solares. 
+              Relevamientos y prestación de servicios de climatización.
             </div>
           </div>
         </div>
         <div className="news-card" id="news-card-3">
           <div className="news-card__img">
-            <img className="" src={imagen1} alt="Logo facebook" loading='lazy' />
+            <img
+              className=""
+              src={imagen1}
+              alt="Logo facebook"
+              loading="lazy"
+            />
           </div>
           <div className="news-card__content">
-            <div className="title">
-              Novedad 4
-            </div>
-            <div className="text">
-              "Nombre de empresa" nos contrató para un servicio de remodelacion total de sus equipamientos frigorificos además de la instalacion de paneles solares. 
-            </div>
+            <div className="title">Heroica - Panadería Del Bien (Rosario)</div>
+            <div className="text">Servicios energéticos y de climatización</div>
           </div>
         </div>
         <div className="news-card" id="news-card-4">
           <div className="news-card__img">
-            <img className="" src={imagen1} alt="Logo facebook" loading='lazy' />
+            <img
+              className=""
+              src={imagen1}
+              alt="Logo facebook"
+              loading="lazy"
+            />
           </div>
           <div className="news-card__content">
             <div className="title">
-              Novedad 5
+              La Fazenda - Café (Fisherton Plaza, Funes)
             </div>
-            <div className="text">
-              "Nombre de empresa" nos contrató para un servicio de remodelacion total de sus equipamientos frigorificos además de la instalacion de paneles solares. 
-            </div>
+            <div className="text">Servicios de climatización.</div>
           </div>
         </div>
         <div className="news-card" id="news-card-5">
           <div className="news-card__img">
-            <img className="" src={imagen1} alt="Logo facebook" loading='lazy' />
+            <img
+              className=""
+              src={imagen1}
+              alt="Logo facebook"
+              loading="lazy"
+            />
           </div>
           <div className="news-card__content">
-            <div className="title">
-              Novedad 6
-            </div>
-            <div className="text">
-              "Nombre de empresa" nos contrató para un servicio de remodelacion total de sus equipamientos frigorificos además de la instalacion de paneles solares. 
-            </div>
+            <div className="title">Certificación Sistemas INVERTER</div>
+            <div className="text"></div>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export { News }
+export { News };

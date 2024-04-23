@@ -3,7 +3,7 @@ import imgMain from "../assets/landing/Home.webp";
 import imgSection1 from "../assets/landing/section1.webp";
 import imgSection3 from "../assets/landing/section3.webp";
 import logoHome from "../assets/landing/logo-home.webp";
-import { ProductsAndServices } from "../components/ProductsAndServices"
+import { ProductsAndServices } from "../components/ProductsAndServices";
 import "swiper/css/bundle";
 
 function LandingSection(props) {
@@ -98,9 +98,7 @@ function LandingSection(props) {
           </div>
         )}
 
-        {name === "productsAndServices" && (
-          <ProductsAndServices/>
-        )}
+        {name === "productsAndServices" && <ProductsAndServices />}
       </div>
 
       <div className="landing-section__info">
@@ -114,9 +112,9 @@ function LandingSection(props) {
             />
             {/* <h2 className='title'>Inergio Ingeniería</h2> */}
             <div className="data">
-              <span>Somos soluciones</span>
+              <span>Somos Soluciones</span>
               <br />
-              <span>Somos Inergio Ingenieria</span>
+              <span>Somos Inergio Ingeniería</span>
             </div>
           </>
         )}
@@ -144,19 +142,25 @@ function LandingSection(props) {
         {name === "productsAndServices" && (
           <>
             <div className="data">
-              <h2 className="title">Productos y servicios</h2>
+              <h2 className="title">Servicios</h2>
               <div className="data__content">
-                Disponemos la prestación de múltiples servicios profesionales,
-                los cuáles posibilitarán que su constructora, empresa o
-                industria cuente con un único proveedor para solucionar
-                diferentes situaciones y necesidades. Todo con el respectivo
-                conocimiento de normativas y regulaciones que permitirán
-                prevenir el riesgo de sanciones y accidentes laborales, y
-                sobretodo optimizar los recursos indispensables para el
-                funcionamiento, desarrollo y crecimiento de su empresa. Además,
-                nuestras obras se llevan a cabocon personal de seguridad e
-                higiene que garantizan la optimización de los procedimientos y
-                actividades ejecutadas.
+                Brindamos múltiples servicios profesionales, los cuáles
+                posibilitan que empresas, constructoras e industrias cuenten con
+                un único proveedor para solucionar diferentes situaciones y
+                necesidades.
+                <br />
+                <br />
+                Desde el inicio de cada proyecto aportamos seguridad a los
+                sistemas y personas que trabajan con ellos. Garantizamos un
+                diseño óptimo, implementación profesional y mantenimiento
+                continuo de los sistemas que se traduce en un ahorro energético
+                y económico para las empresas.
+                <br />
+                <br />
+                Contamos con servicio de guardia para URGENCIAS las 24h para
+                aquellos clientes que poseen instalaciones de punto crítico,
+                donde es indispensable mantener los diferentes equipamientos y/o
+                servicios en funcionamiento.
               </div>
               {/* Dentro de esta seccion deberia haber un carousel con todas las cards de productos y servicios */}
             </div>
@@ -168,23 +172,16 @@ function LandingSection(props) {
             {/* alt de la img de la seccion: 'Manos de diversas personas apilandose en un mismo lugar como participes de un mismo equipo demostrando compañerismo' */}
             {/* alt de la img about-us-planning: 'Dos personas planeando y sacando cuentas de un proyecto sobre una mesa de madera' */}
             <div className="data">
-              <h2 className="title">Nosotros</h2>
+              <h2 className="title">Sobre nosotros</h2>
               <div className="data__content">
-                Nos dedicamos a proporcionar una amplia variedad de servicios
-                energéticos y de climatización. Este último, incluye todo lo
-                relacionado a la calefacción, refrigeración y ventilación, tanto
-                en entornos comerciales como industriales. Desde el inicio de
-                cada proyecto aportamos seguridad a los sistemas y personas que
-                trabajan con ellos. Colaboramos con la optimización de recursos
-                a través del mantenimiento preventivo y en caso de fallas,
-                adecuamos los sistemas a través del mantenimiento correctivo.
+                Somos especialistas en servicios energéticos, climatización,
+                ventilación y refrigeración para todo tipo de escala de
+                proyectos. Nos dedicamos al diseño, suministro, instalación y
+                mantenimiento de los diferentes sistemas.
+                <br />
                 Nuestro amplio conocimiento y experiencia junto a un enfoque
-                integral garantizan los atributos necesarios para brindar a
-                nuestros clientes la confiabilidad requerida para llevar a cabo
-                las mejores instalaciones. Garantizamos un diseño optimo,
-                implementación profesional, operación eficiente y mantenimiento
-                continuo de sus sistemas, maximizando el rendimiento energético
-                y de su inversión, a largo plazo.
+                integral, garantizan los atributos esenciales para brindar
+                soluciones a los diferentes sectores empresariales.
               </div>
             </div>
           </>
