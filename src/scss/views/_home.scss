@@ -98,6 +98,10 @@ body {
 
         .landing-section__slider {
           padding: 1rem 0;
+
+          @media (min-width: 992px) {
+            padding: 3rem 0 1rem;
+          }
         }
       }
 
@@ -107,11 +111,25 @@ body {
             margin: 0 1rem;
           }
 
-          &:first-child {
+          &:last-child {
             .card {
-              margin-left: 2rem;
+              margin-right: 2rem;
             }
           }
+        }
+      }
+    }
+
+    .services-carousel {
+      &__controllers {
+        display: none;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 1rem;
+
+        @media (min-width: 992px) {
+          display: flex;
         }
       }
     }
@@ -600,7 +618,7 @@ body {
 
 .swiper-wrapper {
   &--services {
-    padding: 1rem 0;
+    padding: 1rem;
   }
 }
 

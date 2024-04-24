@@ -103,7 +103,7 @@ function Home() {
                 tanto, cualquiera sea su actividad comercial o industrial, si
                 estás interesado en nuestros servicios podes comunicarte al{" "}
                 <a
-                  class="link link-primary"
+                  className="link link-primary"
                   href="https://www.whatsapp.com/catalog/5493416590047/?app_absent=0"
                 >
                   + 54 9 (341) 659-0047
