@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import imgMain from "../assets/landing/Home.webp";
-import imgSection1 from "../assets/landing/section1.webp";
+import imgSection1 from "../assets/landing/section1.png";
 import imgSection3 from "../assets/landing/section3.webp";
 import logoHome from "../assets/landing/logo-home.webp";
 import { ProductsAndServices } from "../components/ProductsAndServices";
