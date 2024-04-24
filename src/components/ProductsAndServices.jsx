@@ -10,8 +10,6 @@ import imgProduct9 from "../assets/landing/img-product-8.webp";
 import imgProduct10 from "../assets/landing/img-product-10.webp";
 import imgProduct11 from "../assets/landing/img-product-11.webp";
 import imgProduct12 from "../assets/landing/img-product-12.webp";
-import imgProduct13 from "../assets/landing/img-product-13.webp";
-import imgProduct14 from "../assets/landing/img-product-14.webp";
 import { ChevronLeft } from "./icons/ChevronLeft";
 import { ChevronRight } from "./icons/ChevronRight";
 import Swiper from "swiper";

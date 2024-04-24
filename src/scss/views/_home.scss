@@ -111,9 +111,9 @@ body {
             margin: 0 1rem;
           }
 
-          &:first-child {
+          &:last-child {
             .card {
-              margin-left: 2rem;
+              margin-right: 2rem;
             }
           }
         }
@@ -618,7 +618,7 @@ body {
 
 .swiper-wrapper {
   &--services {
-    padding: 1rem 0;
+    padding: 1rem;
   }
 }
 
