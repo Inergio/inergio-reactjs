@@ -1,6 +1,10 @@
 import React, { useEffect, useRef } from "react";
-import imagen1 from "../assets/landing/Calefacción.webp";
-
+import imagen2 from "../assets/landing/sponsor-torneo-rugby.webp";
+import imagen3 from "../assets/landing/colegio-cayetano.webp";
+import imagen4 from "../assets/landing/ypf-opessa.webp";
+import imagen5 from "../assets/landing/heroica-panaderia.webp";
+import imagen6 from "../assets/landing/la-fazenda.webp";
+import imagen7 from "../assets/landing/certificacion-inverter.webp";
 function News() {
   const arrayImgRef = useRef([]);
   let loadedImgs;
@@ -55,8 +59,7 @@ function News() {
           <div className="news-card__img">
             <img
               className=""
-              src={imagen1}
-              alt="Logo facebook"
+              src={imagen2}
               loading="lazy"
             />
           </div>
@@ -72,8 +75,7 @@ function News() {
           <div className="news-card__img">
             <img
               className=""
-              src={imagen1}
-              alt="Logo facebook"
+              src={imagen3}
               loading="lazy"
             />
           </div>
@@ -92,8 +94,7 @@ function News() {
           <div className="news-card__img">
             <img
               className=""
-              src={imagen1}
-              alt="Logo facebook"
+              src={imagen4}
               loading="lazy"
             />
           </div>
@@ -108,8 +109,7 @@ function News() {
           <div className="news-card__img">
             <img
               className=""
-              src={imagen1}
-              alt="Logo facebook"
+              src={imagen5}
               loading="lazy"
             />
           </div>
@@ -122,8 +122,7 @@ function News() {
           <div className="news-card__img">
             <img
               className=""
-              src={imagen1}
-              alt="Logo facebook"
+              src={imagen6}
               loading="lazy"
             />
           </div>
@@ -138,8 +137,7 @@ function News() {
           <div className="news-card__img">
             <img
               className=""
-              src={imagen1}
-              alt="Logo facebook"
+              src={imagen7}
               loading="lazy"
             />
           </div>

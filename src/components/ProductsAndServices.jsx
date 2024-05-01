@@ -6,7 +6,7 @@ import imgProduct5 from "../assets/landing/img-product-5.webp";
 import imgProduct6 from "../assets/landing/img-product-6.webp";
 import imgProduct7 from "../assets/landing/img-product-7.webp";
 import imgProduct8 from "../assets/landing/img-product-8.webp";
-import imgProduct9 from "../assets/landing/img-product-8.webp";
+import imgProduct9 from "../assets/landing/img-product-9.webp";
 import imgProduct10 from "../assets/landing/img-product-10.webp";
 import imgProduct11 from "../assets/landing/img-product-11.webp";
 import imgProduct12 from "../assets/landing/img-product-12.webp";

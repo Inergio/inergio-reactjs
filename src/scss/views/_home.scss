@@ -536,7 +536,8 @@ body {
 
   &__image {
     img {
-      object-fit: contain;
+      aspect-ratio: 1 / 1 !important;
+      object-fit: cover;
       object-position: center center;
       width: 100%;
       border-radius: 1rem 1rem 0 0;
