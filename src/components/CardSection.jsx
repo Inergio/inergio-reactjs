@@ -53,7 +53,7 @@ function CardSection() {
   ];
 
   return (
-    <section className="section-home section-home--card">
+    <section className="section-home section-home--news">
       <div className="section__title">Novedades</div>
 
       <div className="section__grid">

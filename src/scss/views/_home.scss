@@ -352,7 +352,7 @@ body {
     }
   }
 
-  &--card {
+  &--news {
     background: var(--bg-transparent);
     min-height: 100vh;
 
@@ -373,10 +373,11 @@ body {
         gap: 1.5rem;
         justify-content: center;
         max-width: 1400px;
-        padding: 0 1.5rem;
 
         .card {
           transition: all 0.2s ease-in-out;
+          display: flex;
+          flex-direction: column;
 
           &:hover {
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
@@ -384,6 +385,18 @@ body {
             scale: 1.01;
             cursor: pointer;
           }
+
+          &__info {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+
+            .c-btn-contained-primary {
+              margin-top: auto;
+            }
+          }
+
+
         }
 
         @media (min-width: 576px) {
@@ -546,7 +559,6 @@ body {
 
   &__info {
     padding: 1rem;
-    max-height: 200px;
     overflow: hidden;
     transition: .4s;
     position: relative;
@@ -563,7 +575,7 @@ body {
       position: absolute;
       bottom: 0;
       left: 0;
-      border-radius: 0 0 0.5rem 0.5rem;
+      border-radius: 0 0 1rem 1rem;
       display: none;
     }
 
@@ -578,7 +590,16 @@ body {
       }
 
       .see-more {
+        cursor: pointer;
         display: block;
+        transition: all .3s ease-in-out;
+        opacity: 1;
+
+        &:hover,
+        &:focus,
+        &:active {
+          opacity: .6;
+        }
       }
 
     }
@@ -620,6 +641,15 @@ body {
 .swiper-wrapper {
   &--services {
     padding: 1rem;
+
+    .card__info {
+      transition: all .3s ease-in-out;
+      max-height: 200px;
+
+      &.show {
+        max-height: unset;
+      }
+    }
   }
 }
 
