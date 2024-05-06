@@ -62,7 +62,9 @@ function ProductsAndServices() {
     showLessOnAll();
 
     return () => {
-      serviceSlider.current.destroy();
+      if (serviceSlider.current){
+        serviceSlider.current.destroy();
+      }
     };
   }, []);
 
