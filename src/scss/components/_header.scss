@@ -65,7 +65,7 @@
 	.header {
 		transform: translateY(-100%);
 		background: var(--bg-transparent);
-		backdrop-filter: blur(10px);
+		backdrop-filter: blur(3px);
 	}
 
 	&.scrolled-up {
