@@ -88,8 +88,14 @@ body {
         @media (min-width: 768px) {
           display: flex;
           align-items: center;
+          // align-items: flex-start;
           justify-content: center;
           max-width: 50vw;
+          // overflow-y: auto;
+          
+          // @media (min-width: 992px) {
+          //   overflow-y: unset;
+          // }
 
           @media (min-width: 1950px) {
             max-width: 50%;
@@ -99,8 +105,12 @@ body {
         .landing-section__slider {
           padding: 1rem 0;
 
+          // @media (min-width: 768px) {
+          //   margin-top: 25%;
+          // }
+
           @media (min-width: 992px) {
-            padding: 3rem 0 1rem;
+            padding: 4rem 0 1rem;
           }
         }
       }
@@ -125,7 +135,7 @@ body {
         display: none;
         gap: 1rem;
         position: absolute;
-        top: 0;
+        top: 1.5rem;
         right: 1rem;
 
         @media (min-width: 992px) {

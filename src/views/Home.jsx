@@ -2,6 +2,7 @@ import React from "react";
 import { LandingSection } from "../components/LandingSection";
 import { CardSection } from "../components/CardSection";
 import { UsNetworks } from "../components/UsNetworks";
+import { ProductsAndServices } from "../components/ProductsAndServices";
 
 function Home() {
   const landingSections = [
@@ -13,10 +14,10 @@ function Home() {
       name: "renewableEnergy",
       infoPosition: "bottom",
     },
-    {
-      name: "productsAndServices",
-      infoPosition: "right",
-    },
+    // {
+    //   name: "productsAndServices",
+    //   infoPosition: "right",
+    // },
     {
       name: "aboutUs",
       infoPosition: "left",
@@ -28,6 +29,40 @@ function Home() {
       {landingSections.map((section, index) => (
         <LandingSection key={index} section={section} />
       ))}
+
+      {/* --- */}
+      <section className={`landing-section productsAndServices right`}>
+        <div className="landing-section__main" style={{ height: "100%" }}>
+          <ProductsAndServices />
+        </div>
+
+        <div className="landing-section__info">
+          <div className="data">
+            <h2 className="title">Servicios</h2>
+            <div className="data__content">
+              Brindamos múltiples servicios profesionales, los cuáles
+              posibilitan que empresas, constructoras e industrias cuenten con
+              un único proveedor para solucionar diferentes situaciones y
+              necesidades.
+              <br />
+              <br />
+              Desde el inicio de cada proyecto aportamos seguridad a los
+              sistemas y personas que trabajan con ellos. Garantizamos un
+              diseño óptimo, implementación profesional y mantenimiento
+              continuo de los sistemas que se traduce en un ahorro energético
+              y económico para las empresas.
+              <br />
+              <br />
+              Contamos con servicio de guardia para URGENCIAS las 24h para
+              aquellos clientes que poseen instalaciones de punto crítico,
+              donde es indispensable mantener los diferentes equipamientos y/o
+              servicios en funcionamiento.
+            </div>
+            {/* Dentro de esta seccion deberia haber un carousel con todas las cards de productos y servicios */}
+          </div>
+        </div>
+      </section>
+      {/* --- */}
 
       <section className="section-home section-home--about-us">
         <div className="section__title">Sobre nosotros</div>
