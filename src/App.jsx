@@ -50,11 +50,15 @@ function App() {
     let resizeTimeout;
 
     const handleResize = () => {
-      clearTimeout(resizeTimeout);
+      const screenWidth = window.innerWidth;
 
-      resizeTimeout = setTimeout(() => {
-        window.location.reload();
-      }, 2000);
+      if (screenWidth > 768) {
+        clearTimeout(resizeTimeout);
+
+        resizeTimeout = setTimeout(() => {
+          window.location.reload();
+        }, 2000);
+      }
     };
 
     window.addEventListener('resize', handleResize);
